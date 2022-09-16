@@ -1,0 +1,4 @@
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\x64\Debug\Formulario.vcxproj.AssemblyReference.cache
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\x64\Debug\Formulario.vcxproj.SuggestedBindingRedirects.cache
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\x64\Debug\Formulario.MyForm.resources
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\x64\Debug\Formulario.vcxproj.GenerateResource.cache
