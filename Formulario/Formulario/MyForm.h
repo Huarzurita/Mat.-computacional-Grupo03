@@ -38,7 +38,7 @@ namespace MateComputacional {
 				delete components;
 			}
 		}
-
+#pragma region
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	protected:
 
@@ -532,7 +532,7 @@ namespace MateComputacional {
 	private: System::Windows::Forms::Button^ btnLimpiar;
 	private: System::Windows::Forms::Button^ button1;
 
-
+#pragma endregion
 
 	private:
 		/// <summary>
@@ -7702,6 +7702,8 @@ namespace MateComputacional {
 
 			}
 		}
+
+
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (Convert::ToInt32(tbEntrada->Text) > 4 && Convert::ToInt32(tbEntrada->Text) < 16) {
 			if (Convert::ToInt32(tbEntrada->Text) == 5) {
