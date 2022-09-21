@@ -11726,6 +11726,7 @@ public:
 	vector<Vertice*> getN() { return N; }
 	vector<Vertice*> getO() { return O; }
 	
-	int getRspta() { return rspta; }
+	string getRspta() { return to_string(rspta); }
+
 };
 

@@ -1,7 +1,9 @@
 ﻿  MyForm.cpp
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9170,36): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9174,34): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9178,28): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9181,33): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9219,36): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9223,34): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9227,28): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9230,33): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9238,17): warning C4244: 'inicializando': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9239,15): warning C4244: 'inicializando': conversión de 'wchar_t' a 'char'; posible pérdida de datos
   MyForm.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   Formulario.vcxproj -> D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\x64\Debug\Formulario.exe

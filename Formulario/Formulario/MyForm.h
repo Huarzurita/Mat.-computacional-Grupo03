@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-
+#include "Vertices.h"
 namespace MateComputacional {
 
 	using namespace System;
@@ -531,6 +531,10 @@ namespace MateComputacional {
 	private: System::Windows::Forms::Button^ btnConfirmar;
 	private: System::Windows::Forms::Button^ btnLimpiar;
 	private: System::Windows::Forms::Button^ button1;
+private: System::Windows::Forms::Label^ label1;
+private: System::Windows::Forms::Label^ label2;
+private: System::Windows::Forms::Label^ lbPesoMinimo;
+private: System::Windows::Forms::Label^ lbCaminoMinimo;
 
 #pragma endregion
 
@@ -817,6 +821,10 @@ namespace MateComputacional {
 			this->btnConfirmar = (gcnew System::Windows::Forms::Button());
 			this->btnLimpiar = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->lbPesoMinimo = (gcnew System::Windows::Forms::Label());
+			this->lbCaminoMinimo = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -879,6 +887,7 @@ namespace MateComputacional {
 			this->btnCalcularCaminoMinimo->TabIndex = 6;
 			this->btnCalcularCaminoMinimo->Text = L"Calcular";
 			this->btnCalcularCaminoMinimo->UseVisualStyleBackColor = true;
+			this->btnCalcularCaminoMinimo->Click += gcnew System::EventHandler(this, &MatrizVisual::btnCalcularCaminoMinimo_Click);
 			// 
 			// lbAfila
 			// 
@@ -3281,11 +3290,49 @@ namespace MateComputacional {
 			this->button1->Text = L"Graficar el grafo";
 			this->button1->UseVisualStyleBackColor = true;
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(74, 726);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(67, 13);
+			this->label1->TabIndex = 265;
+			this->label1->Text = L"PesoMinimo:";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(71, 750);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(78, 13);
+			this->label2->TabIndex = 266;
+			this->label2->Text = L"CaminoMinimo:";
+			// 
+			// lbPesoMinimo
+			// 
+			this->lbPesoMinimo->AutoSize = true;
+			this->lbPesoMinimo->Location = System::Drawing::Point(147, 726);
+			this->lbPesoMinimo->Name = L"lbPesoMinimo";
+			this->lbPesoMinimo->Size = System::Drawing::Size(0, 13);
+			this->lbPesoMinimo->TabIndex = 267;
+			// 
+			// lbCaminoMinimo
+			// 
+			this->lbCaminoMinimo->AutoSize = true;
+			this->lbCaminoMinimo->Location = System::Drawing::Point(155, 750);
+			this->lbCaminoMinimo->Name = L"lbCaminoMinimo";
+			this->lbCaminoMinimo->Size = System::Drawing::Size(0, 13);
+			this->lbCaminoMinimo->TabIndex = 268;
+			// 
 			// MatrizVisual
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1045, 786);
+			this->Controls->Add(this->lbCaminoMinimo);
+			this->Controls->Add(this->lbPesoMinimo);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->btnCalcularCaminoMinimo);
 			this->Controls->Add(this->lblCaminoMinimo);
@@ -9182,5 +9229,197 @@ namespace MateComputacional {
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		GenerarDatos(Convert::ToDouble(tbEntrada->Text));
 	}
-	};
+	private: System::Void btnCalcularCaminoMinimo_Click(System::Object^ sender, System::EventArgs^ e) {
+		// String ^ aux = gcnew String(agrupamiento->getFuncion().c_str());
+		//this->label24->Text = aux;
+		
+		//lbCaminoMinimo/lbPesoMinimo
+		int nele = Convert::ToInt32(tbEntrada->Text);
+		char Vinicial = Convert::ToChar(ComboBoxVerticeInicio->Text);
+		char Vfinal = Convert::ToChar(comboBoxVerticeFinal->Text);
+
+		//Convert::ToInt32(tb01->Text)
+
+			
+																																							        
+
+		
+		
+		if (Convert::ToInt32(tbEntrada->Text)==5){
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text);
+			int de = Convert::ToInt32(tb34->Text);
+			Vertices* v = new Vertices(ab, ac, ad, ae, bc, bd, be, cd, ce, de, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 6) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text);
+			int ef = Convert::ToInt32(tb45->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, bc, bd, be, bf, cd, ce, cf, de, df, ef, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 7) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text);
+			int fg = Convert::ToInt32(tb56->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, bc, bd, be, bf, bg, cd, ce, cf, cg, de, df, dg, ef, eg, fg, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 8) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text); int ah = Convert::ToInt32(tb07->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text); int bh = Convert::ToInt32(tb17->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text); int ch = Convert::ToInt32(tb27->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text); int dh = Convert::ToInt32(tb37->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text); int eh = Convert::ToInt32(tb47->Text);
+			int fg = Convert::ToInt32(tb56->Text); int fh = Convert::ToInt32(tb57->Text);
+			int gh = Convert::ToInt32(tb67->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, bc, bd, be, bf, bg, bh, cd, ce, cf, cg, ch, de, df, dg, dh, ef, eg, eh, fg, fh, gh, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 9) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text); int ah = Convert::ToInt32(tb07->Text); int ai = Convert::ToInt32(tb08->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text); int bh = Convert::ToInt32(tb17->Text); int bi = Convert::ToInt32(tb18->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text); int ch = Convert::ToInt32(tb27->Text); int ci = Convert::ToInt32(tb28->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text); int dh = Convert::ToInt32(tb37->Text); int di = Convert::ToInt32(tb38->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text); int eh = Convert::ToInt32(tb47->Text); int ei = Convert::ToInt32(tb48->Text);
+			int fg = Convert::ToInt32(tb56->Text); int fh = Convert::ToInt32(tb57->Text); int fi = Convert::ToInt32(tb58->Text);
+			int gh = Convert::ToInt32(tb67->Text); int gi = Convert::ToInt32(tb68->Text);
+			int hi = Convert::ToInt32(tb78->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, bc, bd, be, bf, bg, bh, bi, cd, ce, cf, cg, ch, ci, de, df, dg, dh, di, ef, eg, eh, ei, fg, fh, fi, gh, gi, hi, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 10) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text); int ah = Convert::ToInt32(tb07->Text); int ai = Convert::ToInt32(tb08->Text); int aj = Convert::ToInt32(tb09->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text); int bh = Convert::ToInt32(tb17->Text); int bi = Convert::ToInt32(tb18->Text); int bj = Convert::ToInt32(tb19->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text); int ch = Convert::ToInt32(tb27->Text); int ci = Convert::ToInt32(tb28->Text); int cj = Convert::ToInt32(tb29->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text); int dh = Convert::ToInt32(tb37->Text); int di = Convert::ToInt32(tb38->Text); int dj = Convert::ToInt32(tb39->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text); int eh = Convert::ToInt32(tb47->Text); int ei = Convert::ToInt32(tb48->Text); int ej = Convert::ToInt32(tb49->Text);
+			int fg = Convert::ToInt32(tb56->Text); int fh = Convert::ToInt32(tb57->Text); int fi = Convert::ToInt32(tb58->Text); int fj = Convert::ToInt32(tb59->Text);
+			int gh = Convert::ToInt32(tb67->Text); int gi = Convert::ToInt32(tb68->Text); int gj = Convert::ToInt32(tb69->Text);
+			int hi = Convert::ToInt32(tb78->Text); int hj = Convert::ToInt32(tb79->Text);
+			int ij = Convert::ToInt32(tb89->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, bc, bd, be, bf, bg, bh, bi, bj, cd, ce, cf, cg, ch, ci, cj, de, df, dg, dh, di, dj, ef, eg, eh, ei, ej, fg, fh, fi, fj, gh, gi, gj, hi, hj, ij, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 11) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text); int ah = Convert::ToInt32(tb07->Text); int ai = Convert::ToInt32(tb08->Text); int aj = Convert::ToInt32(tb09->Text); int ak = Convert::ToInt32(tb010->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text); int bh = Convert::ToInt32(tb17->Text); int bi = Convert::ToInt32(tb18->Text); int bj = Convert::ToInt32(tb19->Text); int bk = Convert::ToInt32(tb0110->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text); int ch = Convert::ToInt32(tb27->Text); int ci = Convert::ToInt32(tb28->Text); int cj = Convert::ToInt32(tb29->Text); int ck = Convert::ToInt32(tb210->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text); int dh = Convert::ToInt32(tb37->Text); int di = Convert::ToInt32(tb38->Text); int dj = Convert::ToInt32(tb39->Text); int dk = Convert::ToInt32(tb310->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text); int eh = Convert::ToInt32(tb47->Text); int ei = Convert::ToInt32(tb48->Text); int ej = Convert::ToInt32(tb49->Text); int ek = Convert::ToInt32(tb410->Text);
+			int fg = Convert::ToInt32(tb56->Text); int fh = Convert::ToInt32(tb57->Text); int fi = Convert::ToInt32(tb58->Text); int fj = Convert::ToInt32(tb59->Text); int fk = Convert::ToInt32(tb510->Text);
+			int gh = Convert::ToInt32(tb67->Text); int gi = Convert::ToInt32(tb68->Text); int gj = Convert::ToInt32(tb69->Text); int gk = Convert::ToInt32(tb610->Text);
+			int hi = Convert::ToInt32(tb78->Text); int hj = Convert::ToInt32(tb79->Text); int hk = Convert::ToInt32(tb710->Text);
+			int ij = Convert::ToInt32(tb89->Text); int ik = Convert::ToInt32(tb810->Text);
+			int jk = Convert::ToInt32(tb910->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, bc, bd, be, bf, bg, bh, bi, bj, bk, cd, ce, cf, cg, ch, ci, cj, ck, de, df, dg, dh, di, dj, dk, ef, eg, eh, ei, ej, ek, fg, fh, fi, fj, fk, gh, gi, gj, gk, hi, hj, hk, ij, ik, jk, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 12) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text); int ah = Convert::ToInt32(tb07->Text); int ai = Convert::ToInt32(tb08->Text); int aj = Convert::ToInt32(tb09->Text); int ak = Convert::ToInt32(tb010->Text); int al = Convert::ToInt32(tb011->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text); int bh = Convert::ToInt32(tb17->Text); int bi = Convert::ToInt32(tb18->Text); int bj = Convert::ToInt32(tb19->Text); int bk = Convert::ToInt32(tb0110->Text); int bl = Convert::ToInt32(tb0111->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text); int ch = Convert::ToInt32(tb27->Text); int ci = Convert::ToInt32(tb28->Text); int cj = Convert::ToInt32(tb29->Text); int ck = Convert::ToInt32(tb210->Text); int cl = Convert::ToInt32(tb211->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text); int dh = Convert::ToInt32(tb37->Text); int di = Convert::ToInt32(tb38->Text); int dj = Convert::ToInt32(tb39->Text); int dk = Convert::ToInt32(tb310->Text); int dl = Convert::ToInt32(tb311->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text); int eh = Convert::ToInt32(tb47->Text); int ei = Convert::ToInt32(tb48->Text); int ej = Convert::ToInt32(tb49->Text); int ek = Convert::ToInt32(tb410->Text); int el = Convert::ToInt32(tb411->Text);
+			int fg = Convert::ToInt32(tb56->Text); int fh = Convert::ToInt32(tb57->Text); int fi = Convert::ToInt32(tb58->Text); int fj = Convert::ToInt32(tb59->Text); int fk = Convert::ToInt32(tb510->Text); int fl = Convert::ToInt32(tb511->Text);
+			int gh = Convert::ToInt32(tb67->Text); int gi = Convert::ToInt32(tb68->Text); int gj = Convert::ToInt32(tb69->Text); int gk = Convert::ToInt32(tb610->Text); int gl = Convert::ToInt32(tb611->Text);
+			int hi = Convert::ToInt32(tb78->Text); int hj = Convert::ToInt32(tb79->Text); int hk = Convert::ToInt32(tb710->Text); int hl = Convert::ToInt32(tb711->Text);
+			int ij = Convert::ToInt32(tb89->Text); int ik = Convert::ToInt32(tb810->Text); int il = Convert::ToInt32(tb811->Text);
+			int jk = Convert::ToInt32(tb910->Text); int jl = Convert::ToInt32(tb911->Text);
+			int kl = Convert::ToInt32(tb1011->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, cd, ce, cf, cg, ch, ci, cj, ck, cl, de, df, dg, dh, di, dj, dk, dl, ef, eg, eh, ei, ej, ek, el, fg, fh, fi, fj, fk, fl, gh, gi, gj, gk, gl, hi, hj, hk, hl, ij, ik, il, jk, jl, kl, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 13) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text); int ah = Convert::ToInt32(tb07->Text); int ai = Convert::ToInt32(tb08->Text); int aj = Convert::ToInt32(tb09->Text); int ak = Convert::ToInt32(tb010->Text); int al = Convert::ToInt32(tb011->Text); int am = Convert::ToInt32(tb012->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text); int bh = Convert::ToInt32(tb17->Text); int bi = Convert::ToInt32(tb18->Text); int bj = Convert::ToInt32(tb19->Text); int bk = Convert::ToInt32(tb0110->Text); int bl = Convert::ToInt32(tb0111->Text); int bm = Convert::ToInt32(tb0112->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text); int ch = Convert::ToInt32(tb27->Text); int ci = Convert::ToInt32(tb28->Text); int cj = Convert::ToInt32(tb29->Text); int ck = Convert::ToInt32(tb210->Text); int cl = Convert::ToInt32(tb211->Text); int cm = Convert::ToInt32(tb212->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text); int dh = Convert::ToInt32(tb37->Text); int di = Convert::ToInt32(tb38->Text); int dj = Convert::ToInt32(tb39->Text); int dk = Convert::ToInt32(tb310->Text); int dl = Convert::ToInt32(tb311->Text); int dm = Convert::ToInt32(tb312->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text); int eh = Convert::ToInt32(tb47->Text); int ei = Convert::ToInt32(tb48->Text); int ej = Convert::ToInt32(tb49->Text); int ek = Convert::ToInt32(tb410->Text); int el = Convert::ToInt32(tb411->Text); int em = Convert::ToInt32(tb412->Text);
+			int fg = Convert::ToInt32(tb56->Text); int fh = Convert::ToInt32(tb57->Text); int fi = Convert::ToInt32(tb58->Text); int fj = Convert::ToInt32(tb59->Text); int fk = Convert::ToInt32(tb510->Text); int fl = Convert::ToInt32(tb511->Text); int fm = Convert::ToInt32(tb512->Text);
+			int gh = Convert::ToInt32(tb67->Text); int gi = Convert::ToInt32(tb68->Text); int gj = Convert::ToInt32(tb69->Text); int gk = Convert::ToInt32(tb610->Text); int gl = Convert::ToInt32(tb611->Text); int gm = Convert::ToInt32(tb612->Text);
+			int hi = Convert::ToInt32(tb78->Text); int hj = Convert::ToInt32(tb79->Text); int hk = Convert::ToInt32(tb710->Text); int hl = Convert::ToInt32(tb711->Text); int hm = Convert::ToInt32(tb712->Text);
+			int ij = Convert::ToInt32(tb89->Text); int ik = Convert::ToInt32(tb810->Text); int il = Convert::ToInt32(tb811->Text); int im = Convert::ToInt32(tb812->Text);
+			int jk = Convert::ToInt32(tb910->Text); int jl = Convert::ToInt32(tb911->Text); int jm = Convert::ToInt32(tb912->Text);
+			int kl = Convert::ToInt32(tb1011->Text); int km = Convert::ToInt32(tb1012->Text);
+			int lm = Convert::ToInt32(tb1112->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, bm, cd, ce, cf, cg, ch, ci, cj, ck, cl, cm, de, df, dg, dh, di, dj, dk, dl, dm, ef, eg, eh, ei, ej, ek, el, em, fg, fh, fi, fj, fk, fl, fm, gh, gi, gj, gk, gl, gm, hi, hj, hk, hl, hm, ij, ik, il, im, jk, jl, jm, kl, km, lm, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 14) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text); int ah = Convert::ToInt32(tb07->Text); int ai = Convert::ToInt32(tb08->Text); int aj = Convert::ToInt32(tb09->Text); int ak = Convert::ToInt32(tb010->Text); int al = Convert::ToInt32(tb011->Text); int am = Convert::ToInt32(tb012->Text); int an = Convert::ToInt32(tb013->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text); int bh = Convert::ToInt32(tb17->Text); int bi = Convert::ToInt32(tb18->Text); int bj = Convert::ToInt32(tb19->Text); int bk = Convert::ToInt32(tb0110->Text); int bl = Convert::ToInt32(tb0111->Text); int bm = Convert::ToInt32(tb0112->Text); int bn = Convert::ToInt32(tb0113->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text); int ch = Convert::ToInt32(tb27->Text); int ci = Convert::ToInt32(tb28->Text); int cj = Convert::ToInt32(tb29->Text); int ck = Convert::ToInt32(tb210->Text); int cl = Convert::ToInt32(tb211->Text); int cm = Convert::ToInt32(tb212->Text); int cn = Convert::ToInt32(tb213->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text); int dh = Convert::ToInt32(tb37->Text); int di = Convert::ToInt32(tb38->Text); int dj = Convert::ToInt32(tb39->Text); int dk = Convert::ToInt32(tb310->Text); int dl = Convert::ToInt32(tb311->Text); int dm = Convert::ToInt32(tb312->Text); int dn = Convert::ToInt32(tb313->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text); int eh = Convert::ToInt32(tb47->Text); int ei = Convert::ToInt32(tb48->Text); int ej = Convert::ToInt32(tb49->Text); int ek = Convert::ToInt32(tb410->Text); int el = Convert::ToInt32(tb411->Text); int em = Convert::ToInt32(tb412->Text); int en = Convert::ToInt32(tb413->Text);
+			int fg = Convert::ToInt32(tb56->Text); int fh = Convert::ToInt32(tb57->Text); int fi = Convert::ToInt32(tb58->Text); int fj = Convert::ToInt32(tb59->Text); int fk = Convert::ToInt32(tb510->Text); int fl = Convert::ToInt32(tb511->Text); int fm = Convert::ToInt32(tb512->Text); int fn = Convert::ToInt32(tb513->Text);
+			int gh = Convert::ToInt32(tb67->Text); int gi = Convert::ToInt32(tb68->Text); int gj = Convert::ToInt32(tb69->Text); int gk = Convert::ToInt32(tb610->Text); int gl = Convert::ToInt32(tb611->Text); int gm = Convert::ToInt32(tb612->Text); int gn = Convert::ToInt32(tb613->Text);
+			int hi = Convert::ToInt32(tb78->Text); int hj = Convert::ToInt32(tb79->Text); int hk = Convert::ToInt32(tb710->Text); int hl = Convert::ToInt32(tb711->Text); int hm = Convert::ToInt32(tb712->Text); int hn = Convert::ToInt32(tb713->Text);
+			int ij = Convert::ToInt32(tb89->Text); int ik = Convert::ToInt32(tb810->Text); int il = Convert::ToInt32(tb811->Text); int im = Convert::ToInt32(tb812->Text); int in = Convert::ToInt32(tb813->Text);
+			int jk = Convert::ToInt32(tb910->Text); int jl = Convert::ToInt32(tb911->Text); int jm = Convert::ToInt32(tb912->Text); int jn = Convert::ToInt32(tb913->Text);
+			int kl = Convert::ToInt32(tb1011->Text); int km = Convert::ToInt32(tb1012->Text); int kn = Convert::ToInt32(tb1013->Text);
+			int lm = Convert::ToInt32(tb1112->Text); int ln = Convert::ToInt32(tb1113->Text);
+			int mn = Convert::ToInt32(tb1213->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, bm, bn, cd, ce, cf, cg, ch, ci, cj, ck, cl, cm, cn, de, df, dg, dh, di, dj, dk, dl, dm, dn, ef, eg, eh, ei, ej, ek, el, em, en, fg, fh, fi, fj, fk, fl, fm, fn, gh, gi, gj, gk, gl, gm, gn, hi, hj, hk, hl, hm, hn, ij, ik, il, im, in, jk, jl, jm, jn, kl, km, kn, lm, ln, mn, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+		if (Convert::ToInt32(tbEntrada->Text) == 15) {
+			int ab = Convert::ToInt32(tb01->Text); int ac = Convert::ToInt32(tb02->Text); int ad = Convert::ToInt32(tb03->Text); int ae = Convert::ToInt32(tb04->Text); int af = Convert::ToInt32(tb05->Text); int ag = Convert::ToInt32(tb06->Text); int ah = Convert::ToInt32(tb07->Text); int ai = Convert::ToInt32(tb08->Text); int aj = Convert::ToInt32(tb09->Text); int ak = Convert::ToInt32(tb010->Text); int al = Convert::ToInt32(tb011->Text); int am = Convert::ToInt32(tb012->Text); int an = Convert::ToInt32(tb013->Text); int ao = Convert::ToInt32(tb014->Text);
+			int bc = Convert::ToInt32(tb12->Text); int bd = Convert::ToInt32(tb13->Text); int be = Convert::ToInt32(tb14->Text); int bf = Convert::ToInt32(tb15->Text); int bg = Convert::ToInt32(tb16->Text); int bh = Convert::ToInt32(tb17->Text); int bi = Convert::ToInt32(tb18->Text); int bj = Convert::ToInt32(tb19->Text); int bk = Convert::ToInt32(tb0110->Text); int bl = Convert::ToInt32(tb0111->Text); int bm = Convert::ToInt32(tb0112->Text); int bn = Convert::ToInt32(tb0113->Text); int bo = Convert::ToInt32(tb0114->Text);
+			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text); int cf = Convert::ToInt32(tb25->Text); int cg = Convert::ToInt32(tb26->Text); int ch = Convert::ToInt32(tb27->Text); int ci = Convert::ToInt32(tb28->Text); int cj = Convert::ToInt32(tb29->Text); int ck = Convert::ToInt32(tb210->Text); int cl = Convert::ToInt32(tb211->Text); int cm = Convert::ToInt32(tb212->Text); int cn = Convert::ToInt32(tb213->Text); int co = Convert::ToInt32(tb214->Text);
+			int de = Convert::ToInt32(tb34->Text); int df = Convert::ToInt32(tb35->Text); int dg = Convert::ToInt32(tb36->Text); int dh = Convert::ToInt32(tb37->Text); int di = Convert::ToInt32(tb38->Text); int dj = Convert::ToInt32(tb39->Text); int dk = Convert::ToInt32(tb310->Text); int dl = Convert::ToInt32(tb311->Text); int dm = Convert::ToInt32(tb312->Text); int dn = Convert::ToInt32(tb313->Text); int doo = Convert::ToInt32(tb314->Text);
+			int ef = Convert::ToInt32(tb45->Text); int eg = Convert::ToInt32(tb46->Text); int eh = Convert::ToInt32(tb47->Text); int ei = Convert::ToInt32(tb48->Text); int ej = Convert::ToInt32(tb49->Text); int ek = Convert::ToInt32(tb410->Text); int el = Convert::ToInt32(tb411->Text); int em = Convert::ToInt32(tb412->Text); int en = Convert::ToInt32(tb413->Text); int eo = Convert::ToInt32(tb414->Text);
+			int fg = Convert::ToInt32(tb56->Text); int fh = Convert::ToInt32(tb57->Text); int fi = Convert::ToInt32(tb58->Text); int fj = Convert::ToInt32(tb59->Text); int fk = Convert::ToInt32(tb510->Text); int fl = Convert::ToInt32(tb511->Text); int fm = Convert::ToInt32(tb512->Text); int fn = Convert::ToInt32(tb513->Text); int fo = Convert::ToInt32(tb514->Text);
+			int gh = Convert::ToInt32(tb67->Text); int gi = Convert::ToInt32(tb68->Text); int gj = Convert::ToInt32(tb69->Text); int gk = Convert::ToInt32(tb610->Text); int gl = Convert::ToInt32(tb611->Text); int gm = Convert::ToInt32(tb612->Text); int gn = Convert::ToInt32(tb613->Text); int go = Convert::ToInt32(tb614->Text);
+			int hi = Convert::ToInt32(tb78->Text); int hj = Convert::ToInt32(tb79->Text); int hk = Convert::ToInt32(tb710->Text); int hl = Convert::ToInt32(tb711->Text); int hm = Convert::ToInt32(tb712->Text); int hn = Convert::ToInt32(tb713->Text); int ho = Convert::ToInt32(tb714->Text);
+			int ij = Convert::ToInt32(tb89->Text); int ik = Convert::ToInt32(tb810->Text); int il = Convert::ToInt32(tb811->Text); int im = Convert::ToInt32(tb812->Text); int in = Convert::ToInt32(tb813->Text); int io = Convert::ToInt32(tb814->Text);
+			int jk = Convert::ToInt32(tb910->Text); int jl = Convert::ToInt32(tb911->Text); int jm = Convert::ToInt32(tb912->Text); int jn = Convert::ToInt32(tb913->Text); int jo = Convert::ToInt32(tb914->Text);
+			int kl = Convert::ToInt32(tb1011->Text); int km = Convert::ToInt32(tb1012->Text); int kn = Convert::ToInt32(tb1013->Text); int ko = Convert::ToInt32(tb1014->Text);
+			int lm = Convert::ToInt32(tb1112->Text); int ln = Convert::ToInt32(tb1113->Text); int lo = Convert::ToInt32(tb1114->Text);
+			int mn = Convert::ToInt32(tb1213->Text); int mo = Convert::ToInt32(tb1214->Text);
+			int no = Convert::ToInt32(tb1314->Text);
+
+			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, bm, bn, bo, cd, ce, cf, cg, ch, ci, cj, ck, cl, cm, cn, co, de, df, dg, dh, di, dj, dk, dl, dm, dn, doo, ef, eg, eh, ei, ej, ek, el, em, en, eo, fg, fh, fi, fj, fk, fl, fm, fn, fo, gh, gi, gj, gk, gl, gm, gn, go, hi, hj, hk, hl, hm, hn, ho, ij, ik, il, im, in, io, jk, jl, jm, jn, jo, kl, km, kn, ko, lm, ln, lo, mn, mo, no, nele, Vinicial, Vfinal);
+			String^ pesoM = gcnew String(v->getRspta().c_str());
+			lbPesoMinimo->Text = pesoM;
+		}
+
+	}
+};
 }
