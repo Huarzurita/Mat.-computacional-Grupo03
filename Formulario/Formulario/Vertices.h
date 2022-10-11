@@ -1,6 +1,7 @@
 #pragma once
 #include"Vertice.h"
 #include"ValorTablaFila.h"
+#include "Camino.h"
 class Vertices
 {
 private:
@@ -38,7 +39,7 @@ private:
 	vector<Vertice*> O ;
 
 	int rspta;
-	
+	string caminoMin;
 public:
 	
 	//van TODOS LOS DATOS DE LA MATRIZ (11 CONSTRUCTORES)
@@ -374,6 +375,8 @@ public:
 		case 'D':rspta = d->getValorT(); break;
 		case 'E':rspta = e->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(),Vinicial,Vfinal,nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//6
 	Vertices(int ab, int ac, int ad, int ae, int af,
@@ -813,6 +816,8 @@ public:
 		case 'E':rspta = e->getValorT(); break;
 		case 'F':rspta = f->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(),f->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//7
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag,
@@ -1369,6 +1374,8 @@ public:
 		case 'F':rspta = f->getValorT(); break;
 		case 'G':rspta = g->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(),g->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//8
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah,
@@ -2057,6 +2064,8 @@ public:
 		case 'G':rspta = g->getValorT(); break;
 		case 'H':rspta = h->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(),h->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//9
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai,
@@ -2893,6 +2902,8 @@ public:
 		case 'H':rspta = h->getValorT(); break;
 		case 'I':rspta = i->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(),i->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//10
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj,
@@ -3889,6 +3900,8 @@ public:
 		case 'I':rspta = i->getValorT(); break;
 		case 'J':rspta = j->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(),j->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//11
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak,
@@ -5050,6 +5063,8 @@ public:
 		case 'J':rspta = j->getValorT(); break;
 		case 'K':rspta = k->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(),k->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//12
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak, int al,
@@ -6398,6 +6413,8 @@ public:
 		case 'K':rspta = k->getValorT(); break;
 		case 'L':rspta = l->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(),l->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//13
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak, int al, int am,
@@ -7947,6 +7964,8 @@ public:
 		case 'L':rspta = l->getValorT(); break;
 		case 'M':rspta = m->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(),m->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//14
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak, int al, int am, int an,
@@ -9711,6 +9730,8 @@ public:
 		case 'M':rspta = m->getValorT(); break;
 		case 'N':rspta = n->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(), m->getLetraProcedencia(),n->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	//15
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak, int al, int am, int an, int ao,
@@ -11706,6 +11727,8 @@ public:
 		case 'N':rspta = n->getValorT(); break;
 		case 'O':rspta = o->getValorT(); break;
 		}
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(), m->getLetraProcedencia(), n->getLetraProcedencia(),o->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		caminoMin = CaminoMinimo->getRspta();
 	};
 	
 	//Destructor
@@ -11727,6 +11750,7 @@ public:
 	vector<Vertice*> getO() { return O; }
 	
 	string getRspta() { return to_string(rspta); }
+	string getCamino() { return caminoMin; }
 
 };
 

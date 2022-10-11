@@ -124,6 +124,7 @@
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camino.h" />
     <ClInclude Include="Dependencias.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>

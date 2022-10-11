@@ -9443,8 +9443,10 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text);
 			int de = Convert::ToInt32(tb34->Text);
 			Vertices* v = new Vertices(ab, ac, ad, ae, bc, bd, be, cd, ce, de, nele, Vinicial, Vfinal);
-			String^ pesoM = gcnew String(v->getRspta().c_str());
+			String^ pesoM = gcnew String(v->getRspta().c_str());	
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 6) {
@@ -9457,6 +9459,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, bc, bd, be, bf, cd, ce, cf, de, df, ef, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 7) {
@@ -9470,6 +9474,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, bc, bd, be, bf, bg, cd, ce, cf, cg, de, df, dg, ef, eg, fg, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 8) {
@@ -9484,6 +9490,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, bc, bd, be, bf, bg, bh, cd, ce, cf, cg, ch, de, df, dg, dh, ef, eg, eh, fg, fh, gh, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 9) {
@@ -9499,6 +9507,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, bc, bd, be, bf, bg, bh, bi, cd, ce, cf, cg, ch, ci, de, df, dg, dh, di, ef, eg, eh, ei, fg, fh, fi, gh, gi, hi, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 10) {
@@ -9515,6 +9525,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, bc, bd, be, bf, bg, bh, bi, bj, cd, ce, cf, cg, ch, ci, cj, de, df, dg, dh, di, dj, ef, eg, eh, ei, ej, fg, fh, fi, fj, gh, gi, gj, hi, hj, ij, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 11) {
@@ -9532,6 +9544,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, bc, bd, be, bf, bg, bh, bi, bj, bk, cd, ce, cf, cg, ch, ci, cj, ck, de, df, dg, dh, di, dj, dk, ef, eg, eh, ei, ej, ek, fg, fh, fi, fj, fk, gh, gi, gj, gk, hi, hj, hk, ij, ik, jk, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 12) {
@@ -9550,6 +9564,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, cd, ce, cf, cg, ch, ci, cj, ck, cl, de, df, dg, dh, di, dj, dk, dl, ef, eg, eh, ei, ej, ek, el, fg, fh, fi, fj, fk, fl, gh, gi, gj, gk, gl, hi, hj, hk, hl, ij, ik, il, jk, jl, kl, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 13) {
@@ -9569,6 +9585,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, bm, cd, ce, cf, cg, ch, ci, cj, ck, cl, cm, de, df, dg, dh, di, dj, dk, dl, dm, ef, eg, eh, ei, ej, ek, el, em, fg, fh, fi, fj, fk, fl, fm, gh, gi, gj, gk, gl, gm, hi, hj, hk, hl, hm, ij, ik, il, im, jk, jl, jm, kl, km, lm, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 14) {
@@ -9589,6 +9607,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, bm, bn, cd, ce, cf, cg, ch, ci, cj, ck, cl, cm, cn, de, df, dg, dh, di, dj, dk, dl, dm, dn, ef, eg, eh, ei, ej, ek, el, em, en, fg, fh, fi, fj, fk, fl, fm, fn, gh, gi, gj, gk, gl, gm, gn, hi, hj, hk, hl, hm, hn, ij, ik, il, im, in, jk, jl, jm, jn, kl, km, kn, lm, ln, mn, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 
 		if (Convert::ToInt32(tbEntrada->Text) == 15) {
@@ -9610,6 +9630,8 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			Vertices* v = new Vertices(ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, bm, bn, bo, cd, ce, cf, cg, ch, ci, cj, ck, cl, cm, cn, co, de, df, dg, dh, di, dj, dk, dl, dm, dn, doo, ef, eg, eh, ei, ej, ek, el, em, en, eo, fg, fh, fi, fj, fk, fl, fm, fn, fo, gh, gi, gj, gk, gl, gm, gn, go, hi, hj, hk, hl, hm, hn, ho, ij, ik, il, im, in, io, jk, jl, jm, jn, jo, kl, km, kn, ko, lm, ln, lo, mn, mo, no, nele, Vinicial, Vfinal);
 			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
+			String^ caminoM = gcnew String(v->getCamino().c_str());
+			lbCaminoMinimo->Text = caminoM;
 		}
 	}
 };
