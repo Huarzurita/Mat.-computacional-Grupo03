@@ -551,10 +551,12 @@ namespace MateComputacional {
 	private: System::Windows::Forms::Label^ lbGrafoD;
 	private: System::Windows::Forms::Label^ lbGrafoE;
 	private: System::Windows::Forms::Panel^ panel1;
-private: System::Windows::Forms::Label^ label1;
-private: System::Windows::Forms::Label^ label2;
-private: System::Windows::Forms::Label^ lbPesoMinimo;
-private: System::Windows::Forms::Label^ lbCaminoMinimo;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::Label^ lbPesoMinimo;
+	private: System::Windows::Forms::Label^ lbCaminoMinimo;
+
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::ComponentModel::IContainer^ components;
 
 
@@ -566,6 +568,7 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 		   /// </summary>
 		   void InitializeComponent(void)
 		   {
+			   System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MatrizVisual::typeid));
 			   this->lblVerticeInicio = (gcnew System::Windows::Forms::Label());
 			   this->lblVerticeFinal = (gcnew System::Windows::Forms::Label());
 			   this->ComboBoxVerticeInicio = (gcnew System::Windows::Forms::ComboBox());
@@ -845,24 +848,32 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   this->label2 = (gcnew System::Windows::Forms::Label());
 			   this->lbPesoMinimo = (gcnew System::Windows::Forms::Label());
 			   this->lbCaminoMinimo = (gcnew System::Windows::Forms::Label());
+			   this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			   this->panel1->SuspendLayout();
+			   (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			   this->SuspendLayout();
 			   // 
 			   // lblVerticeInicio
 			   // 
 			   this->lblVerticeInicio->AutoSize = true;
-			   this->lblVerticeInicio->Location = System::Drawing::Point(81, 596);
+			   this->lblVerticeInicio->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lblVerticeInicio->ForeColor = System::Drawing::Color::White;
+			   this->lblVerticeInicio->Location = System::Drawing::Point(63, 591);
 			   this->lblVerticeInicio->Name = L"lblVerticeInicio";
-			   this->lblVerticeInicio->Size = System::Drawing::Size(71, 13);
+			   this->lblVerticeInicio->Size = System::Drawing::Size(86, 13);
 			   this->lblVerticeInicio->TabIndex = 2;
 			   this->lblVerticeInicio->Text = L"Vertice Inicio:";
 			   // 
 			   // lblVerticeFinal
 			   // 
 			   this->lblVerticeFinal->AutoSize = true;
-			   this->lblVerticeFinal->Location = System::Drawing::Point(84, 638);
+			   this->lblVerticeFinal->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lblVerticeFinal->ForeColor = System::Drawing::Color::White;
+			   this->lblVerticeFinal->Location = System::Drawing::Point(66, 633);
 			   this->lblVerticeFinal->Name = L"lblVerticeFinal";
-			   this->lblVerticeFinal->Size = System::Drawing::Size(68, 13);
+			   this->lblVerticeFinal->Size = System::Drawing::Size(82, 13);
 			   this->lblVerticeFinal->TabIndex = 3;
 			   this->lblVerticeFinal->Text = L"Vertice Final:";
 			   // 
@@ -885,28 +896,38 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lblCaminoMinimo
 			   // 
 			   this->lblCaminoMinimo->AutoSize = true;
-			   this->lblCaminoMinimo->Location = System::Drawing::Point(71, 681);
+			   this->lblCaminoMinimo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lblCaminoMinimo->ForeColor = System::Drawing::Color::White;
+			   this->lblCaminoMinimo->Location = System::Drawing::Point(53, 676);
 			   this->lblCaminoMinimo->Name = L"lblCaminoMinimo";
-			   this->lblCaminoMinimo->Size = System::Drawing::Size(81, 13);
+			   this->lblCaminoMinimo->Size = System::Drawing::Size(95, 13);
 			   this->lblCaminoMinimo->TabIndex = 5;
 			   this->lblCaminoMinimo->Text = L"Camino Minimo:";
 			   // 
 			   // btnCalcularCaminoMinimo
 			   // 
+			   this->btnCalcularCaminoMinimo->BackColor = System::Drawing::Color::Gray;
+			   this->btnCalcularCaminoMinimo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->btnCalcularCaminoMinimo->ForeColor = System::Drawing::Color::White;
 			   this->btnCalcularCaminoMinimo->Location = System::Drawing::Point(158, 668);
 			   this->btnCalcularCaminoMinimo->Name = L"btnCalcularCaminoMinimo";
 			   this->btnCalcularCaminoMinimo->Size = System::Drawing::Size(120, 38);
 			   this->btnCalcularCaminoMinimo->TabIndex = 6;
 			   this->btnCalcularCaminoMinimo->Text = L"Calcular";
-			   this->btnCalcularCaminoMinimo->UseVisualStyleBackColor = true;
+			   this->btnCalcularCaminoMinimo->UseVisualStyleBackColor = false;
 			   this->btnCalcularCaminoMinimo->Click += gcnew System::EventHandler(this, &MatrizVisual::btnCalcularCaminoMinimo_Click);
 			   // 
 			   // lbAfila
 			   // 
 			   this->lbAfila->AutoSize = true;
+			   this->lbAfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbAfila->ForeColor = System::Drawing::Color::White;
 			   this->lbAfila->Location = System::Drawing::Point(406, 84);
 			   this->lbAfila->Name = L"lbAfila";
-			   this->lbAfila->Size = System::Drawing::Size(14, 13);
+			   this->lbAfila->Size = System::Drawing::Size(15, 17);
 			   this->lbAfila->TabIndex = 0;
 			   this->lbAfila->Text = L"A";
 			   this->lbAfila->Visible = false;
@@ -914,9 +935,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbBfila
 			   // 
 			   this->lbBfila->AutoSize = true;
+			   this->lbBfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbBfila->ForeColor = System::Drawing::Color::White;
 			   this->lbBfila->Location = System::Drawing::Point(407, 110);
 			   this->lbBfila->Name = L"lbBfila";
-			   this->lbBfila->Size = System::Drawing::Size(14, 13);
+			   this->lbBfila->Size = System::Drawing::Size(14, 17);
 			   this->lbBfila->TabIndex = 1;
 			   this->lbBfila->Text = L"B";
 			   this->lbBfila->Visible = false;
@@ -924,9 +948,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbCfila
 			   // 
 			   this->lbCfila->AutoSize = true;
+			   this->lbCfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbCfila->ForeColor = System::Drawing::Color::White;
 			   this->lbCfila->Location = System::Drawing::Point(407, 135);
 			   this->lbCfila->Name = L"lbCfila";
-			   this->lbCfila->Size = System::Drawing::Size(14, 13);
+			   this->lbCfila->Size = System::Drawing::Size(14, 17);
 			   this->lbCfila->TabIndex = 2;
 			   this->lbCfila->Text = L"C";
 			   this->lbCfila->Visible = false;
@@ -934,9 +961,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbDfila
 			   // 
 			   this->lbDfila->AutoSize = true;
+			   this->lbDfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbDfila->ForeColor = System::Drawing::Color::White;
 			   this->lbDfila->Location = System::Drawing::Point(407, 161);
 			   this->lbDfila->Name = L"lbDfila";
-			   this->lbDfila->Size = System::Drawing::Size(15, 13);
+			   this->lbDfila->Size = System::Drawing::Size(14, 17);
 			   this->lbDfila->TabIndex = 3;
 			   this->lbDfila->Text = L"D";
 			   this->lbDfila->Visible = false;
@@ -944,9 +974,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbEfila
 			   // 
 			   this->lbEfila->AutoSize = true;
+			   this->lbEfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbEfila->ForeColor = System::Drawing::Color::White;
 			   this->lbEfila->Location = System::Drawing::Point(407, 188);
 			   this->lbEfila->Name = L"lbEfila";
-			   this->lbEfila->Size = System::Drawing::Size(14, 13);
+			   this->lbEfila->Size = System::Drawing::Size(13, 17);
 			   this->lbEfila->TabIndex = 4;
 			   this->lbEfila->Text = L"E";
 			   this->lbEfila->Visible = false;
@@ -954,9 +987,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbAcolumna
 			   // 
 			   this->lbAcolumna->AutoSize = true;
+			   this->lbAcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbAcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbAcolumna->Location = System::Drawing::Point(445, 50);
 			   this->lbAcolumna->Name = L"lbAcolumna";
-			   this->lbAcolumna->Size = System::Drawing::Size(14, 13);
+			   this->lbAcolumna->Size = System::Drawing::Size(15, 17);
 			   this->lbAcolumna->TabIndex = 5;
 			   this->lbAcolumna->Text = L"A";
 			   this->lbAcolumna->Visible = false;
@@ -964,9 +1000,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbBcolumna
 			   // 
 			   this->lbBcolumna->AutoSize = true;
+			   this->lbBcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbBcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbBcolumna->Location = System::Drawing::Point(484, 50);
 			   this->lbBcolumna->Name = L"lbBcolumna";
-			   this->lbBcolumna->Size = System::Drawing::Size(14, 13);
+			   this->lbBcolumna->Size = System::Drawing::Size(14, 17);
 			   this->lbBcolumna->TabIndex = 6;
 			   this->lbBcolumna->Text = L"B";
 			   this->lbBcolumna->Visible = false;
@@ -974,9 +1013,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbCcolumna
 			   // 
 			   this->lbCcolumna->AutoSize = true;
+			   this->lbCcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbCcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbCcolumna->Location = System::Drawing::Point(522, 50);
 			   this->lbCcolumna->Name = L"lbCcolumna";
-			   this->lbCcolumna->Size = System::Drawing::Size(14, 13);
+			   this->lbCcolumna->Size = System::Drawing::Size(14, 17);
 			   this->lbCcolumna->TabIndex = 7;
 			   this->lbCcolumna->Text = L"C";
 			   this->lbCcolumna->Visible = false;
@@ -984,9 +1026,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbDcolumna
 			   // 
 			   this->lbDcolumna->AutoSize = true;
+			   this->lbDcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbDcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbDcolumna->Location = System::Drawing::Point(559, 50);
 			   this->lbDcolumna->Name = L"lbDcolumna";
-			   this->lbDcolumna->Size = System::Drawing::Size(15, 13);
+			   this->lbDcolumna->Size = System::Drawing::Size(14, 17);
 			   this->lbDcolumna->TabIndex = 8;
 			   this->lbDcolumna->Text = L"D";
 			   this->lbDcolumna->Visible = false;
@@ -994,9 +1039,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbEcolumna
 			   // 
 			   this->lbEcolumna->AutoSize = true;
+			   this->lbEcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbEcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbEcolumna->Location = System::Drawing::Point(597, 50);
 			   this->lbEcolumna->Name = L"lbEcolumna";
-			   this->lbEcolumna->Size = System::Drawing::Size(14, 13);
+			   this->lbEcolumna->Size = System::Drawing::Size(13, 17);
 			   this->lbEcolumna->TabIndex = 9;
 			   this->lbEcolumna->Text = L"E";
 			   this->lbEcolumna->Visible = false;
@@ -1004,6 +1052,9 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // tb00
 			   // 
 			   this->tb00->Enabled = false;
+			   this->tb00->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->tb00->ForeColor = System::Drawing::Color::White;
 			   this->tb00->Location = System::Drawing::Point(437, 81);
 			   this->tb00->Name = L"tb00";
 			   this->tb00->Size = System::Drawing::Size(32, 20);
@@ -1211,35 +1262,48 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // label11
 			   // 
 			   this->label11->AutoSize = true;
+			   this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->label11->ForeColor = System::Drawing::Color::White;
 			   this->label11->Location = System::Drawing::Point(34, 50);
 			   this->label11->Name = L"label11";
-			   this->label11->Size = System::Drawing::Size(227, 13);
+			   this->label11->Size = System::Drawing::Size(274, 13);
 			   this->label11->TabIndex = 35;
 			   this->label11->Text = L"Ingrese el tamaño de la matriz cuadrada (nxn) :";
 			   // 
 			   // tbEntrada
 			   // 
-			   this->tbEntrada->Location = System::Drawing::Point(267, 46);
+			   this->tbEntrada->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->tbEntrada->ForeColor = System::Drawing::Color::Black;
+			   this->tbEntrada->Location = System::Drawing::Point(318, 47);
 			   this->tbEntrada->Name = L"tbEntrada";
 			   this->tbEntrada->Size = System::Drawing::Size(61, 20);
 			   this->tbEntrada->TabIndex = 36;
 			   // 
 			   // button2
 			   // 
+			   this->button2->BackColor = System::Drawing::Color::Gray;
+			   this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->button2->ForeColor = System::Drawing::Color::White;
 			   this->button2->Location = System::Drawing::Point(37, 82);
 			   this->button2->Name = L"button2";
 			   this->button2->Size = System::Drawing::Size(342, 48);
 			   this->button2->TabIndex = 39;
 			   this->button2->Text = L"Generar tamaño de la matriz";
-			   this->button2->UseVisualStyleBackColor = true;
+			   this->button2->UseVisualStyleBackColor = false;
 			   this->button2->Click += gcnew System::EventHandler(this, &MatrizVisual::button2_Click);
 			   // 
 			   // lbFfila
 			   // 
 			   this->lbFfila->AutoSize = true;
+			   this->lbFfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbFfila->ForeColor = System::Drawing::Color::White;
 			   this->lbFfila->Location = System::Drawing::Point(407, 216);
 			   this->lbFfila->Name = L"lbFfila";
-			   this->lbFfila->Size = System::Drawing::Size(13, 13);
+			   this->lbFfila->Size = System::Drawing::Size(13, 17);
 			   this->lbFfila->TabIndex = 40;
 			   this->lbFfila->Text = L"F";
 			   this->lbFfila->Visible = false;
@@ -1247,31 +1311,42 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbFcolumna
 			   // 
 			   this->lbFcolumna->AutoSize = true;
+			   this->lbFcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbFcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbFcolumna->Location = System::Drawing::Point(636, 50);
 			   this->lbFcolumna->Name = L"lbFcolumna";
-			   this->lbFcolumna->Size = System::Drawing::Size(13, 13);
+			   this->lbFcolumna->Size = System::Drawing::Size(13, 17);
 			   this->lbFcolumna->TabIndex = 41;
 			   this->lbFcolumna->Text = L"F";
 			   this->lbFcolumna->Visible = false;
 			   // 
 			   // button3
 			   // 
+			   this->button3->BackColor = System::Drawing::Color::Gray;
+			   this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->button3->ForeColor = System::Drawing::Color::White;
 			   this->button3->Location = System::Drawing::Point(235, 144);
 			   this->button3->Name = L"button3";
 			   this->button3->Size = System::Drawing::Size(144, 47);
 			   this->button3->TabIndex = 42;
 			   this->button3->Text = L"Generar valores en la matriz";
-			   this->button3->UseVisualStyleBackColor = true;
+			   this->button3->UseVisualStyleBackColor = false;
 			   this->button3->Click += gcnew System::EventHandler(this, &MatrizVisual::button3_Click);
 			   // 
 			   // button4
 			   // 
+			   this->button4->BackColor = System::Drawing::Color::Gray;
+			   this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->button4->ForeColor = System::Drawing::Color::White;
 			   this->button4->Location = System::Drawing::Point(37, 144);
 			   this->button4->Name = L"button4";
 			   this->button4->Size = System::Drawing::Size(144, 47);
 			   this->button4->TabIndex = 43;
 			   this->button4->Text = L"Autogenerar valores en la matriz";
-			   this->button4->UseVisualStyleBackColor = true;
+			   this->button4->UseVisualStyleBackColor = false;
 			   this->button4->Click += gcnew System::EventHandler(this, &MatrizVisual::button4_Click);
 			   // 
 			   // tb11
@@ -1286,6 +1361,9 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // tb01
 			   // 
 			   this->tb01->Enabled = false;
+			   this->tb01->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->tb01->ForeColor = System::Drawing::SystemColors::WindowText;
 			   this->tb01->Location = System::Drawing::Point(475, 82);
 			   this->tb01->Name = L"tb01";
 			   this->tb01->Size = System::Drawing::Size(32, 20);
@@ -1295,9 +1373,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbLfila
 			   // 
 			   this->lbLfila->AutoSize = true;
+			   this->lbLfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbLfila->ForeColor = System::Drawing::Color::White;
 			   this->lbLfila->Location = System::Drawing::Point(408, 370);
 			   this->lbLfila->Name = L"lbLfila";
-			   this->lbLfila->Size = System::Drawing::Size(13, 13);
+			   this->lbLfila->Size = System::Drawing::Size(13, 17);
 			   this->lbLfila->TabIndex = 49;
 			   this->lbLfila->Text = L"L";
 			   this->lbLfila->Visible = false;
@@ -1305,9 +1386,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbKfila
 			   // 
 			   this->lbKfila->AutoSize = true;
+			   this->lbKfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbKfila->ForeColor = System::Drawing::Color::White;
 			   this->lbKfila->Location = System::Drawing::Point(406, 343);
 			   this->lbKfila->Name = L"lbKfila";
-			   this->lbKfila->Size = System::Drawing::Size(14, 13);
+			   this->lbKfila->Size = System::Drawing::Size(13, 17);
 			   this->lbKfila->TabIndex = 48;
 			   this->lbKfila->Text = L"K";
 			   this->lbKfila->Visible = false;
@@ -1315,9 +1399,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbJfila
 			   // 
 			   this->lbJfila->AutoSize = true;
+			   this->lbJfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbJfila->ForeColor = System::Drawing::Color::White;
 			   this->lbJfila->Location = System::Drawing::Point(407, 319);
 			   this->lbJfila->Name = L"lbJfila";
-			   this->lbJfila->Size = System::Drawing::Size(12, 13);
+			   this->lbJfila->Size = System::Drawing::Size(13, 17);
 			   this->lbJfila->TabIndex = 47;
 			   this->lbJfila->Text = L"J";
 			   this->lbJfila->Visible = false;
@@ -1325,9 +1412,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbIfila
 			   // 
 			   this->lbIfila->AutoSize = true;
+			   this->lbIfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbIfila->ForeColor = System::Drawing::Color::White;
 			   this->lbIfila->Location = System::Drawing::Point(410, 293);
 			   this->lbIfila->Name = L"lbIfila";
-			   this->lbIfila->Size = System::Drawing::Size(10, 13);
+			   this->lbIfila->Size = System::Drawing::Size(10, 17);
 			   this->lbIfila->TabIndex = 46;
 			   this->lbIfila->Text = L"I";
 			   this->lbIfila->Visible = false;
@@ -1335,9 +1425,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbHfila
 			   // 
 			   this->lbHfila->AutoSize = true;
+			   this->lbHfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbHfila->ForeColor = System::Drawing::Color::White;
 			   this->lbHfila->Location = System::Drawing::Point(406, 265);
 			   this->lbHfila->Name = L"lbHfila";
-			   this->lbHfila->Size = System::Drawing::Size(15, 13);
+			   this->lbHfila->Size = System::Drawing::Size(14, 17);
 			   this->lbHfila->TabIndex = 45;
 			   this->lbHfila->Text = L"H";
 			   this->lbHfila->Visible = false;
@@ -1345,9 +1438,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbGfila
 			   // 
 			   this->lbGfila->AutoSize = true;
+			   this->lbGfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbGfila->ForeColor = System::Drawing::Color::White;
 			   this->lbGfila->Location = System::Drawing::Point(406, 240);
 			   this->lbGfila->Name = L"lbGfila";
-			   this->lbGfila->Size = System::Drawing::Size(15, 13);
+			   this->lbGfila->Size = System::Drawing::Size(14, 17);
 			   this->lbGfila->TabIndex = 44;
 			   this->lbGfila->Text = L"G";
 			   this->lbGfila->Visible = false;
@@ -1355,9 +1451,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbOfila
 			   // 
 			   this->lbOfila->AutoSize = true;
+			   this->lbOfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbOfila->ForeColor = System::Drawing::Color::White;
 			   this->lbOfila->Location = System::Drawing::Point(405, 449);
 			   this->lbOfila->Name = L"lbOfila";
-			   this->lbOfila->Size = System::Drawing::Size(15, 13);
+			   this->lbOfila->Size = System::Drawing::Size(15, 17);
 			   this->lbOfila->TabIndex = 52;
 			   this->lbOfila->Text = L"O";
 			   this->lbOfila->Visible = false;
@@ -1365,9 +1464,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbNfila
 			   // 
 			   this->lbNfila->AutoSize = true;
+			   this->lbNfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbNfila->ForeColor = System::Drawing::Color::White;
 			   this->lbNfila->Location = System::Drawing::Point(406, 422);
 			   this->lbNfila->Name = L"lbNfila";
-			   this->lbNfila->Size = System::Drawing::Size(15, 13);
+			   this->lbNfila->Size = System::Drawing::Size(15, 17);
 			   this->lbNfila->TabIndex = 51;
 			   this->lbNfila->Text = L"N";
 			   this->lbNfila->Visible = false;
@@ -1375,9 +1477,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbMfila
 			   // 
 			   this->lbMfila->AutoSize = true;
+			   this->lbMfila->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			   this->lbMfila->ForeColor = System::Drawing::Color::White;
 			   this->lbMfila->Location = System::Drawing::Point(406, 395);
 			   this->lbMfila->Name = L"lbMfila";
-			   this->lbMfila->Size = System::Drawing::Size(16, 13);
+			   this->lbMfila->Size = System::Drawing::Size(19, 17);
 			   this->lbMfila->TabIndex = 50;
 			   this->lbMfila->Text = L"M";
 			   this->lbMfila->Visible = false;
@@ -1385,9 +1490,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbOcolumna
 			   // 
 			   this->lbOcolumna->AutoSize = true;
+			   this->lbOcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbOcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbOcolumna->Location = System::Drawing::Point(977, 50);
 			   this->lbOcolumna->Name = L"lbOcolumna";
-			   this->lbOcolumna->Size = System::Drawing::Size(15, 13);
+			   this->lbOcolumna->Size = System::Drawing::Size(15, 17);
 			   this->lbOcolumna->TabIndex = 61;
 			   this->lbOcolumna->Text = L"O";
 			   this->lbOcolumna->Visible = false;
@@ -1395,9 +1503,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbNcolumna
 			   // 
 			   this->lbNcolumna->AutoSize = true;
+			   this->lbNcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbNcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbNcolumna->Location = System::Drawing::Point(937, 50);
 			   this->lbNcolumna->Name = L"lbNcolumna";
-			   this->lbNcolumna->Size = System::Drawing::Size(15, 13);
+			   this->lbNcolumna->Size = System::Drawing::Size(15, 17);
 			   this->lbNcolumna->TabIndex = 60;
 			   this->lbNcolumna->Text = L"N";
 			   this->lbNcolumna->Visible = false;
@@ -1405,9 +1516,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbMcolumna
 			   // 
 			   this->lbMcolumna->AutoSize = true;
+			   this->lbMcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbMcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbMcolumna->Location = System::Drawing::Point(900, 50);
 			   this->lbMcolumna->Name = L"lbMcolumna";
-			   this->lbMcolumna->Size = System::Drawing::Size(16, 13);
+			   this->lbMcolumna->Size = System::Drawing::Size(19, 17);
 			   this->lbMcolumna->TabIndex = 59;
 			   this->lbMcolumna->Text = L"M";
 			   this->lbMcolumna->Visible = false;
@@ -1415,9 +1529,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbLcolumna
 			   // 
 			   this->lbLcolumna->AutoSize = true;
+			   this->lbLcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbLcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbLcolumna->Location = System::Drawing::Point(865, 50);
 			   this->lbLcolumna->Name = L"lbLcolumna";
-			   this->lbLcolumna->Size = System::Drawing::Size(13, 13);
+			   this->lbLcolumna->Size = System::Drawing::Size(13, 17);
 			   this->lbLcolumna->TabIndex = 58;
 			   this->lbLcolumna->Text = L"L";
 			   this->lbLcolumna->Visible = false;
@@ -1425,9 +1542,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbKcolumna
 			   // 
 			   this->lbKcolumna->AutoSize = true;
+			   this->lbKcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbKcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbKcolumna->Location = System::Drawing::Point(825, 50);
 			   this->lbKcolumna->Name = L"lbKcolumna";
-			   this->lbKcolumna->Size = System::Drawing::Size(14, 13);
+			   this->lbKcolumna->Size = System::Drawing::Size(13, 17);
 			   this->lbKcolumna->TabIndex = 57;
 			   this->lbKcolumna->Text = L"K";
 			   this->lbKcolumna->Visible = false;
@@ -1435,9 +1555,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbJcolumna
 			   // 
 			   this->lbJcolumna->AutoSize = true;
+			   this->lbJcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbJcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbJcolumna->Location = System::Drawing::Point(789, 50);
 			   this->lbJcolumna->Name = L"lbJcolumna";
-			   this->lbJcolumna->Size = System::Drawing::Size(12, 13);
+			   this->lbJcolumna->Size = System::Drawing::Size(13, 17);
 			   this->lbJcolumna->TabIndex = 56;
 			   this->lbJcolumna->Text = L"J";
 			   this->lbJcolumna->Visible = false;
@@ -1445,9 +1568,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbIcolumna
 			   // 
 			   this->lbIcolumna->AutoSize = true;
+			   this->lbIcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbIcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbIcolumna->Location = System::Drawing::Point(752, 50);
 			   this->lbIcolumna->Name = L"lbIcolumna";
-			   this->lbIcolumna->Size = System::Drawing::Size(10, 13);
+			   this->lbIcolumna->Size = System::Drawing::Size(10, 17);
 			   this->lbIcolumna->TabIndex = 55;
 			   this->lbIcolumna->Text = L"I";
 			   this->lbIcolumna->Visible = false;
@@ -1455,9 +1581,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbHcolumna
 			   // 
 			   this->lbHcolumna->AutoSize = true;
+			   this->lbHcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbHcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbHcolumna->Location = System::Drawing::Point(711, 49);
 			   this->lbHcolumna->Name = L"lbHcolumna";
-			   this->lbHcolumna->Size = System::Drawing::Size(15, 13);
+			   this->lbHcolumna->Size = System::Drawing::Size(14, 17);
 			   this->lbHcolumna->TabIndex = 54;
 			   this->lbHcolumna->Text = L"H";
 			   this->lbHcolumna->Visible = false;
@@ -1465,9 +1594,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbGcolumna
 			   // 
 			   this->lbGcolumna->AutoSize = true;
+			   this->lbGcolumna->Font = (gcnew System::Drawing::Font(L"Brighly Crush", 8.249999F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGcolumna->ForeColor = System::Drawing::Color::White;
 			   this->lbGcolumna->Location = System::Drawing::Point(673, 50);
 			   this->lbGcolumna->Name = L"lbGcolumna";
-			   this->lbGcolumna->Size = System::Drawing::Size(15, 13);
+			   this->lbGcolumna->Size = System::Drawing::Size(14, 17);
 			   this->lbGcolumna->TabIndex = 53;
 			   this->lbGcolumna->Text = L"G";
 			   this->lbGcolumna->Visible = false;
@@ -3274,43 +3406,57 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // 
 			   // btnConfirmar
 			   // 
+			   this->btnConfirmar->BackColor = System::Drawing::Color::Gray;
+			   this->btnConfirmar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->btnConfirmar->ForeColor = System::Drawing::Color::White;
 			   this->btnConfirmar->Location = System::Drawing::Point(265, 204);
 			   this->btnConfirmar->Name = L"btnConfirmar";
 			   this->btnConfirmar->Size = System::Drawing::Size(114, 35);
 			   this->btnConfirmar->TabIndex = 262;
 			   this->btnConfirmar->Text = L"Confirmar los datos";
-			   this->btnConfirmar->UseVisualStyleBackColor = true;
+			   this->btnConfirmar->UseVisualStyleBackColor = false;
 			   this->btnConfirmar->Visible = false;
 			   this->btnConfirmar->Click += gcnew System::EventHandler(this, &MatrizVisual::btnConfirmar_Click);
 			   // 
 			   // btnLimpiar
 			   // 
+			   this->btnLimpiar->BackColor = System::Drawing::Color::Gray;
+			   this->btnLimpiar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->btnLimpiar->ForeColor = System::Drawing::Color::White;
 			   this->btnLimpiar->Location = System::Drawing::Point(889, 484);
 			   this->btnLimpiar->Name = L"btnLimpiar";
 			   this->btnLimpiar->Size = System::Drawing::Size(112, 36);
 			   this->btnLimpiar->TabIndex = 263;
 			   this->btnLimpiar->Text = L"Limpiar matriz";
-			   this->btnLimpiar->UseVisualStyleBackColor = true;
+			   this->btnLimpiar->UseVisualStyleBackColor = false;
 			   this->btnLimpiar->Click += gcnew System::EventHandler(this, &MatrizVisual::btnLimpiar_Click);
 			   // 
 			   // button1
 			   // 
+			   this->button1->BackColor = System::Drawing::Color::Gray;
+			   this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->button1->ForeColor = System::Drawing::Color::White;
 			   this->button1->Location = System::Drawing::Point(326, 505);
 			   this->button1->Name = L"button1";
 			   this->button1->Size = System::Drawing::Size(231, 40);
 			   this->button1->TabIndex = 264;
 			   this->button1->Text = L"Graficar el grafo";
-			   this->button1->UseVisualStyleBackColor = true;
+			   this->button1->UseVisualStyleBackColor = false;
 			   this->button1->Click += gcnew System::EventHandler(this, &MatrizVisual::button1_Click);
 			   // 
 			   // lbGrafoA
 			   // 
 			   this->lbGrafoA->AutoSize = true;
 			   this->lbGrafoA->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoA->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
 			   this->lbGrafoA->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoA->Location = System::Drawing::Point(61, 114);
+			   this->lbGrafoA->Location = System::Drawing::Point(83, 111);
 			   this->lbGrafoA->Name = L"lbGrafoA";
-			   this->lbGrafoA->Size = System::Drawing::Size(14, 13);
+			   this->lbGrafoA->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoA->TabIndex = 265;
 			   this->lbGrafoA->Text = L"A";
 			   // 
@@ -3318,10 +3464,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // 
 			   this->lbGrafoB->AutoSize = true;
 			   this->lbGrafoB->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoB->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
 			   this->lbGrafoB->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoB->Location = System::Drawing::Point(136, 185);
+			   this->lbGrafoB->Location = System::Drawing::Point(183, 209);
 			   this->lbGrafoB->Name = L"lbGrafoB";
-			   this->lbGrafoB->Size = System::Drawing::Size(14, 13);
+			   this->lbGrafoB->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoB->TabIndex = 266;
 			   this->lbGrafoB->Text = L"B";
 			   // 
@@ -3329,10 +3477,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // 
 			   this->lbGrafoC->AutoSize = true;
 			   this->lbGrafoC->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoC->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
 			   this->lbGrafoC->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoC->Location = System::Drawing::Point(136, 41);
+			   this->lbGrafoC->Location = System::Drawing::Point(216, 44);
 			   this->lbGrafoC->Name = L"lbGrafoC";
-			   this->lbGrafoC->Size = System::Drawing::Size(14, 13);
+			   this->lbGrafoC->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoC->TabIndex = 267;
 			   this->lbGrafoC->Text = L"C";
 			   // 
@@ -3340,10 +3490,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // 
 			   this->lbGrafoD->AutoSize = true;
 			   this->lbGrafoD->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoD->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
 			   this->lbGrafoD->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoD->Location = System::Drawing::Point(233, 41);
+			   this->lbGrafoD->Location = System::Drawing::Point(335, 111);
 			   this->lbGrafoD->Name = L"lbGrafoD";
-			   this->lbGrafoD->Size = System::Drawing::Size(15, 13);
+			   this->lbGrafoD->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoD->TabIndex = 268;
 			   this->lbGrafoD->Text = L"D";
 			   // 
@@ -3351,10 +3503,12 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // 
 			   this->lbGrafoE->AutoSize = true;
 			   this->lbGrafoE->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoE->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
 			   this->lbGrafoE->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoE->Location = System::Drawing::Point(271, 157);
+			   this->lbGrafoE->Location = System::Drawing::Point(297, 211);
 			   this->lbGrafoE->Name = L"lbGrafoE";
-			   this->lbGrafoE->Size = System::Drawing::Size(14, 13);
+			   this->lbGrafoE->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoE->TabIndex = 269;
 			   this->lbGrafoE->Text = L"E";
 			   // 
@@ -3377,24 +3531,33 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // label1
 			   // 
 			   this->label1->AutoSize = true;
-			   this->label1->Location = System::Drawing::Point(62, 743);
+			   this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->label1->ForeColor = System::Drawing::Color::White;
+			   this->label1->Location = System::Drawing::Point(44, 738);
 			   this->label1->Name = L"label1";
-			   this->label1->Size = System::Drawing::Size(69, 13);
+			   this->label1->Size = System::Drawing::Size(81, 13);
 			   this->label1->TabIndex = 271;
 			   this->label1->Text = L"Peso minimo:";
 			   // 
 			   // label2
 			   // 
 			   this->label2->AutoSize = true;
-			   this->label2->Location = System::Drawing::Point(62, 785);
+			   this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->label2->ForeColor = System::Drawing::Color::White;
+			   this->label2->Location = System::Drawing::Point(33, 781);
 			   this->label2->Name = L"label2";
-			   this->label2->Size = System::Drawing::Size(80, 13);
+			   this->label2->Size = System::Drawing::Size(94, 13);
 			   this->label2->TabIndex = 272;
 			   this->label2->Text = L"Camino minimo:";
 			   // 
 			   // lbPesoMinimo
 			   // 
 			   this->lbPesoMinimo->AutoSize = true;
+			   this->lbPesoMinimo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbPesoMinimo->ForeColor = System::Drawing::Color::White;
 			   this->lbPesoMinimo->Location = System::Drawing::Point(137, 743);
 			   this->lbPesoMinimo->Name = L"lbPesoMinimo";
 			   this->lbPesoMinimo->Size = System::Drawing::Size(0, 13);
@@ -3403,16 +3566,28 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   // lbCaminoMinimo
 			   // 
 			   this->lbCaminoMinimo->AutoSize = true;
-			   this->lbCaminoMinimo->Location = System::Drawing::Point(140, 785);
+			   this->lbCaminoMinimo->Location = System::Drawing::Point(149, 786);
 			   this->lbCaminoMinimo->Name = L"lbCaminoMinimo";
 			   this->lbCaminoMinimo->Size = System::Drawing::Size(0, 13);
 			   this->lbCaminoMinimo->TabIndex = 274;
+			   // 
+			   // pictureBox2
+			   // 
+			  // this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			   this->pictureBox2->Location = System::Drawing::Point(25, 211);
+			   this->pictureBox2->Name = L"pictureBox2";
+			   this->pictureBox2->Size = System::Drawing::Size(225, 217);
+			   this->pictureBox2->TabIndex = 276;
+			   this->pictureBox2->TabStop = false;
 			   // 
 			   // MatrizVisual
 			   // 
 			   this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			   this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			   this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				   static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			   this->ClientSize = System::Drawing::Size(1047, 919);
+			   this->Controls->Add(this->pictureBox2);
 			   this->Controls->Add(this->lbCaminoMinimo);
 			   this->Controls->Add(this->lbPesoMinimo);
 			   this->Controls->Add(this->label2);
@@ -3691,6 +3866,7 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			   this->Text = L"MatrizVisual";
 			   this->panel1->ResumeLayout(false);
 			   this->panel1->PerformLayout();
+			   (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			   this->ResumeLayout(false);
 			   this->PerformLayout();
 
@@ -9443,7 +9619,7 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			int cd = Convert::ToInt32(tb23->Text); int ce = Convert::ToInt32(tb24->Text);
 			int de = Convert::ToInt32(tb34->Text);
 			Vertices* v = new Vertices(ab, ac, ad, ae, bc, bd, be, cd, ce, de, nele, Vinicial, Vfinal);
-			String^ pesoM = gcnew String(v->getRspta().c_str());	
+			String^ pesoM = gcnew String(v->getRspta().c_str());
 			lbPesoMinimo->Text = pesoM;
 			String^ caminoM = gcnew String(v->getCamino().c_str());
 			lbCaminoMinimo->Text = caminoM;
@@ -9634,5 +9810,5 @@ private: System::Windows::Forms::Label^ lbCaminoMinimo;
 			lbCaminoMinimo->Text = caminoM;
 		}
 	}
-};
+	};
 }
