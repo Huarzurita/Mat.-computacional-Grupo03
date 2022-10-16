@@ -1230,7 +1230,7 @@ public:
 							break;
 						}
 						aux = F[i]->getPeso() + aux2;//se suma el peso del camino y el valor temporal o defnitivo del vertice 
-						if (aux <= menor || contAux < 1) { menor = aux; e->setValorT(menor); f->setLetraProcedencia(F[i]->getLetra()); contAux++; }
+						if (aux <= menor || contAux < 1) { menor = aux; f->setValorT(menor); f->setLetraProcedencia(F[i]->getLetra()); contAux++; }
 
 					}
 				}
