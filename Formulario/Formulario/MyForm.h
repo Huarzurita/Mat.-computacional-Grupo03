@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <iostream>
 #include "Vertices.h"
 
@@ -21,7 +21,7 @@ namespace MateComputacional {
 		{
 			InitializeComponent();
 			//
-			//TODO: agregar código de constructor aquí
+			//TODO: agregar cï¿½digo de constructor aquï¿½
 			//
 
 			g = panel1->CreateGraphics();
@@ -32,7 +32,7 @@ namespace MateComputacional {
 
 	protected:
 		/// <summary>
-		/// Limpiar los recursos que se estén usando.
+		/// Limpiar los recursos que se estï¿½n usando.
 		/// </summary>
 		~MatrizVisual()
 		{
@@ -539,7 +539,7 @@ namespace MateComputacional {
 
 	private:
 		/// <summary>
-		/// Variable del diseñador necesaria.
+		/// Variable del diseï¿½ador necesaria.
 		/// </summary>
 
 		Graphics^ g;
@@ -557,14 +557,24 @@ namespace MateComputacional {
 	private: System::Windows::Forms::Label^ lbCaminoMinimo;
 
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::Label^ lbGrafoF;
+	private: System::Windows::Forms::Label^ lbGrafoO;
+	private: System::Windows::Forms::Label^ lbGrafoN;
+	private: System::Windows::Forms::Label^ lbGrafoM;
+	private: System::Windows::Forms::Label^ lbGrafoL;
+	private: System::Windows::Forms::Label^ lbGrafoK;
+	private: System::Windows::Forms::Label^ lbGrafoJ;
+	private: System::Windows::Forms::Label^ lbGrafoI;
+	private: System::Windows::Forms::Label^ lbGrafoH;
+	private: System::Windows::Forms::Label^ lbGrafoG;
 	private: System::ComponentModel::IContainer^ components;
 
 
 
 #pragma region Windows Form Designer generated code
 		   /// <summary>
-		   /// Método necesario para admitir el Diseñador. No se puede modificar
-		   /// el contenido de este método con el editor de código.
+		   /// Mï¿½todo necesario para admitir el Diseï¿½ador. No se puede modificar
+		   /// el contenido de este mï¿½todo con el editor de cï¿½digo.
 		   /// </summary>
 		   void InitializeComponent(void)
 		   {
@@ -844,6 +854,16 @@ namespace MateComputacional {
 			   this->lbGrafoD = (gcnew System::Windows::Forms::Label());
 			   this->lbGrafoE = (gcnew System::Windows::Forms::Label());
 			   this->panel1 = (gcnew System::Windows::Forms::Panel());
+			   this->lbGrafoO = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoN = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoM = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoL = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoK = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoJ = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoI = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoH = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoG = (gcnew System::Windows::Forms::Label());
+			   this->lbGrafoF = (gcnew System::Windows::Forms::Label());
 			   this->label1 = (gcnew System::Windows::Forms::Label());
 			   this->label2 = (gcnew System::Windows::Forms::Label());
 			   this->lbPesoMinimo = (gcnew System::Windows::Forms::Label());
@@ -1267,9 +1287,9 @@ namespace MateComputacional {
 			   this->label11->ForeColor = System::Drawing::Color::White;
 			   this->label11->Location = System::Drawing::Point(34, 50);
 			   this->label11->Name = L"label11";
-			   this->label11->Size = System::Drawing::Size(274, 13);
+			   this->label11->Size = System::Drawing::Size(275, 13);
 			   this->label11->TabIndex = 35;
-			   this->label11->Text = L"Ingrese el tamaño de la matriz cuadrada (nxn) :";
+			   this->label11->Text = L"Ingrese el tamaï¿½o de la matriz cuadrada (nxn) :";
 			   // 
 			   // tbEntrada
 			   // 
@@ -1291,7 +1311,7 @@ namespace MateComputacional {
 			   this->button2->Name = L"button2";
 			   this->button2->Size = System::Drawing::Size(342, 48);
 			   this->button2->TabIndex = 39;
-			   this->button2->Text = L"Generar tamaño de la matriz";
+			   this->button2->Text = L"Generar tamaï¿½o de la matriz";
 			   this->button2->UseVisualStyleBackColor = false;
 			   this->button2->Click += gcnew System::EventHandler(this, &MatrizVisual::button2_Click);
 			   // 
@@ -3454,7 +3474,7 @@ namespace MateComputacional {
 			   this->lbGrafoA->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				   static_cast<System::Byte>(0)));
 			   this->lbGrafoA->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoA->Location = System::Drawing::Point(83, 111);
+			   this->lbGrafoA->Location = System::Drawing::Point(51, 163);
 			   this->lbGrafoA->Name = L"lbGrafoA";
 			   this->lbGrafoA->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoA->TabIndex = 265;
@@ -3467,7 +3487,7 @@ namespace MateComputacional {
 			   this->lbGrafoB->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				   static_cast<System::Byte>(0)));
 			   this->lbGrafoB->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoB->Location = System::Drawing::Point(183, 209);
+			   this->lbGrafoB->Location = System::Drawing::Point(106, 84);
 			   this->lbGrafoB->Name = L"lbGrafoB";
 			   this->lbGrafoB->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoB->TabIndex = 266;
@@ -3480,7 +3500,7 @@ namespace MateComputacional {
 			   this->lbGrafoC->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				   static_cast<System::Byte>(0)));
 			   this->lbGrafoC->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoC->Location = System::Drawing::Point(216, 44);
+			   this->lbGrafoC->Location = System::Drawing::Point(115, 246);
 			   this->lbGrafoC->Name = L"lbGrafoC";
 			   this->lbGrafoC->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoC->TabIndex = 267;
@@ -3493,7 +3513,7 @@ namespace MateComputacional {
 			   this->lbGrafoD->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				   static_cast<System::Byte>(0)));
 			   this->lbGrafoD->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoD->Location = System::Drawing::Point(335, 111);
+			   this->lbGrafoD->Location = System::Drawing::Point(182, 23);
 			   this->lbGrafoD->Name = L"lbGrafoD";
 			   this->lbGrafoD->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoD->TabIndex = 268;
@@ -3506,7 +3526,7 @@ namespace MateComputacional {
 			   this->lbGrafoE->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				   static_cast<System::Byte>(0)));
 			   this->lbGrafoE->ForeColor = System::Drawing::Color::White;
-			   this->lbGrafoE->Location = System::Drawing::Point(297, 211);
+			   this->lbGrafoE->Location = System::Drawing::Point(182, 299);
 			   this->lbGrafoE->Name = L"lbGrafoE";
 			   this->lbGrafoE->Size = System::Drawing::Size(18, 20);
 			   this->lbGrafoE->TabIndex = 269;
@@ -3517,6 +3537,16 @@ namespace MateComputacional {
 			   this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				   static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			   this->panel1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			   this->panel1->Controls->Add(this->lbGrafoO);
+			   this->panel1->Controls->Add(this->lbGrafoN);
+			   this->panel1->Controls->Add(this->lbGrafoM);
+			   this->panel1->Controls->Add(this->lbGrafoL);
+			   this->panel1->Controls->Add(this->lbGrafoK);
+			   this->panel1->Controls->Add(this->lbGrafoJ);
+			   this->panel1->Controls->Add(this->lbGrafoI);
+			   this->panel1->Controls->Add(this->lbGrafoH);
+			   this->panel1->Controls->Add(this->lbGrafoG);
+			   this->panel1->Controls->Add(this->lbGrafoF);
 			   this->panel1->Controls->Add(this->lbGrafoA);
 			   this->panel1->Controls->Add(this->lbGrafoE);
 			   this->panel1->Controls->Add(this->lbGrafoC);
@@ -3527,6 +3557,136 @@ namespace MateComputacional {
 			   this->panel1->Name = L"panel1";
 			   this->panel1->Size = System::Drawing::Size(709, 338);
 			   this->panel1->TabIndex = 270;
+			   // 
+			   // lbGrafoO
+			   // 
+			   this->lbGrafoO->AutoSize = true;
+			   this->lbGrafoO->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoO->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoO->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoO->Location = System::Drawing::Point(609, 163);
+			   this->lbGrafoO->Name = L"lbGrafoO";
+			   this->lbGrafoO->Size = System::Drawing::Size(19, 20);
+			   this->lbGrafoO->TabIndex = 279;
+			   this->lbGrafoO->Text = L"O";
+			   // 
+			   // lbGrafoN
+			   // 
+			   this->lbGrafoN->AutoSize = true;
+			   this->lbGrafoN->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoN->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoN->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoN->Location = System::Drawing::Point(562, 84);
+			   this->lbGrafoN->Name = L"lbGrafoN";
+			   this->lbGrafoN->Size = System::Drawing::Size(18, 20);
+			   this->lbGrafoN->TabIndex = 278;
+			   this->lbGrafoN->Text = L"N";
+			   // 
+			   // lbGrafoM
+			   // 
+			   this->lbGrafoM->AutoSize = true;
+			   this->lbGrafoM->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoM->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoM->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoM->Location = System::Drawing::Point(558, 246);
+			   this->lbGrafoM->Name = L"lbGrafoM";
+			   this->lbGrafoM->Size = System::Drawing::Size(20, 20);
+			   this->lbGrafoM->TabIndex = 277;
+			   this->lbGrafoM->Text = L"M";
+			   // 
+			   // lbGrafoL
+			   // 
+			   this->lbGrafoL->AutoSize = true;
+			   this->lbGrafoL->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoL->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoL->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoL->Location = System::Drawing::Point(499, 23);
+			   this->lbGrafoL->Name = L"lbGrafoL";
+			   this->lbGrafoL->Size = System::Drawing::Size(17, 20);
+			   this->lbGrafoL->TabIndex = 276;
+			   this->lbGrafoL->Text = L"L";
+			   // 
+			   // lbGrafoK
+			   // 
+			   this->lbGrafoK->AutoSize = true;
+			   this->lbGrafoK->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoK->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoK->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoK->Location = System::Drawing::Point(466, 299);
+			   this->lbGrafoK->Name = L"lbGrafoK";
+			   this->lbGrafoK->Size = System::Drawing::Size(18, 20);
+			   this->lbGrafoK->TabIndex = 275;
+			   this->lbGrafoK->Text = L"K";
+			   // 
+			   // lbGrafoJ
+			   // 
+			   this->lbGrafoJ->AutoSize = true;
+			   this->lbGrafoJ->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoJ->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoJ->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoJ->Location = System::Drawing::Point(419, 23);
+			   this->lbGrafoJ->Name = L"lbGrafoJ";
+			   this->lbGrafoJ->Size = System::Drawing::Size(16, 20);
+			   this->lbGrafoJ->TabIndex = 274;
+			   this->lbGrafoJ->Text = L"J";
+			   // 
+			   // lbGrafoI
+			   // 
+			   this->lbGrafoI->AutoSize = true;
+			   this->lbGrafoI->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoI->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoI->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoI->Location = System::Drawing::Point(372, 299);
+			   this->lbGrafoI->Name = L"lbGrafoI";
+			   this->lbGrafoI->Size = System::Drawing::Size(13, 20);
+			   this->lbGrafoI->TabIndex = 273;
+			   this->lbGrafoI->Text = L"I";
+			   // 
+			   // lbGrafoH
+			   // 
+			   this->lbGrafoH->AutoSize = true;
+			   this->lbGrafoH->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoH->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoH->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoH->Location = System::Drawing::Point(343, 23);
+			   this->lbGrafoH->Name = L"lbGrafoH";
+			   this->lbGrafoH->Size = System::Drawing::Size(18, 20);
+			   this->lbGrafoH->TabIndex = 272;
+			   this->lbGrafoH->Text = L"H";
+			   // 
+			   // lbGrafoG
+			   // 
+			   this->lbGrafoG->AutoSize = true;
+			   this->lbGrafoG->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoG->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoG->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoG->Location = System::Drawing::Point(275, 299);
+			   this->lbGrafoG->Name = L"lbGrafoG";
+			   this->lbGrafoG->Size = System::Drawing::Size(19, 20);
+			   this->lbGrafoG->TabIndex = 271;
+			   this->lbGrafoG->Text = L"G";
+			   // 
+			   // lbGrafoF
+			   // 
+			   this->lbGrafoF->AutoSize = true;
+			   this->lbGrafoF->BackColor = System::Drawing::Color::Black;
+			   this->lbGrafoF->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbGrafoF->ForeColor = System::Drawing::Color::White;
+			   this->lbGrafoF->Location = System::Drawing::Point(266, 23);
+			   this->lbGrafoF->Name = L"lbGrafoF";
+			   this->lbGrafoF->Size = System::Drawing::Size(17, 20);
+			   this->lbGrafoF->TabIndex = 270;
+			   this->lbGrafoF->Text = L"F";
 			   // 
 			   // label1
 			   // 
@@ -3566,6 +3726,9 @@ namespace MateComputacional {
 			   // lbCaminoMinimo
 			   // 
 			   this->lbCaminoMinimo->AutoSize = true;
+			   this->lbCaminoMinimo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				   static_cast<System::Byte>(0)));
+			   this->lbCaminoMinimo->ForeColor = System::Drawing::Color::White;
 			   this->lbCaminoMinimo->Location = System::Drawing::Point(149, 786);
 			   this->lbCaminoMinimo->Name = L"lbCaminoMinimo";
 			   this->lbCaminoMinimo->Size = System::Drawing::Size(0, 13);
@@ -3872,6 +4035,570 @@ namespace MateComputacional {
 
 		   }
 #pragma endregion
+		   void ComprobarDespinte(int n) {
+			   switch (n)
+			   {
+			   case 5:
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+				   /*if (Convert::ToInt32(tb04->Text) && Convert::ToInt32(tb14->Text) && Convert::ToInt32(tb24->Text) && Convert::ToInt32(tb34->Text) == 0) {
+					   lbGrafoE->Visible = false;
+				   }*/
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+				   /*if (Convert::ToInt32(tb03->Text) && Convert::ToInt32(tb13->Text) && Convert::ToInt32(tb23->Text) == 0) {
+					   lbGrafoD->Visible = false;
+				   }*/
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+				   /*if (Convert::ToInt32(tb02->Text) && Convert::ToInt32(tb12->Text) == 0) {
+					   lbGrafoC->Visible = false;
+				   }*/
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   /*if (Convert::ToInt32(tb01->Text) == 0) {
+					   lbGrafoB->Visible = false;
+				   }*/
+				   break;
+
+			   case 6:
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 7:
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 8:
+				   //Columna H
+				   if (Convert::ToInt32(tb07->Text) || Convert::ToInt32(tb17->Text) || Convert::ToInt32(tb27->Text) || Convert::ToInt32(tb37->Text) || Convert::ToInt32(tb47->Text) || Convert::ToInt32(tb57->Text) || Convert::ToInt32(tb67->Text) != 0) {
+					   lbGrafoH->Visible = true;
+				   }
+
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 9:
+				   //Columna I
+				   if (Convert::ToInt32(tb08->Text) || Convert::ToInt32(tb18->Text) || Convert::ToInt32(tb28->Text) || Convert::ToInt32(tb38->Text) || Convert::ToInt32(tb48->Text) || Convert::ToInt32(tb58->Text) || Convert::ToInt32(tb68->Text) || Convert::ToInt32(tb78->Text) != 0) {
+					   lbGrafoI->Visible = true;
+				   }
+
+				   //Columna H
+				   if (Convert::ToInt32(tb07->Text) || Convert::ToInt32(tb17->Text) || Convert::ToInt32(tb27->Text) || Convert::ToInt32(tb37->Text) || Convert::ToInt32(tb47->Text) || Convert::ToInt32(tb57->Text) || Convert::ToInt32(tb67->Text) != 0) {
+					   lbGrafoH->Visible = true;
+				   }
+
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 10:
+				   //Columna J
+				   if (Convert::ToInt32(tb09->Text) || Convert::ToInt32(tb19->Text) || Convert::ToInt32(tb29->Text) || Convert::ToInt32(tb39->Text) || Convert::ToInt32(tb49->Text) || Convert::ToInt32(tb59->Text) || Convert::ToInt32(tb69->Text) || Convert::ToInt32(tb79->Text) || Convert::ToInt32(tb89->Text) != 0) {
+					   lbGrafoJ->Visible = true;
+				   }
+
+				   //Columna I
+				   if (Convert::ToInt32(tb08->Text) || Convert::ToInt32(tb18->Text) || Convert::ToInt32(tb28->Text) || Convert::ToInt32(tb38->Text) || Convert::ToInt32(tb48->Text) || Convert::ToInt32(tb58->Text) || Convert::ToInt32(tb68->Text) || Convert::ToInt32(tb78->Text) != 0) {
+					   lbGrafoI->Visible = true;
+				   }
+
+				   //Columna H
+				   if (Convert::ToInt32(tb07->Text) || Convert::ToInt32(tb17->Text) || Convert::ToInt32(tb27->Text) || Convert::ToInt32(tb37->Text) || Convert::ToInt32(tb47->Text) || Convert::ToInt32(tb57->Text) || Convert::ToInt32(tb67->Text) != 0) {
+					   lbGrafoH->Visible = true;
+				   }
+
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 11:
+
+				   //Columna K
+				   if (Convert::ToInt32(tb010->Text) || Convert::ToInt32(tb0110->Text) || Convert::ToInt32(tb210->Text) || Convert::ToInt32(tb310->Text) || Convert::ToInt32(tb410->Text) || Convert::ToInt32(tb510->Text)
+					   || Convert::ToInt32(tb610->Text) || Convert::ToInt32(tb710->Text) || Convert::ToInt32(tb810->Text) || Convert::ToInt32(tb910->Text) != 0)
+				   {
+					   lbGrafoK->Visible = true;
+				   }
+				   //Columna J
+				   if (Convert::ToInt32(tb09->Text) || Convert::ToInt32(tb19->Text) || Convert::ToInt32(tb29->Text) || Convert::ToInt32(tb39->Text) || Convert::ToInt32(tb49->Text) || Convert::ToInt32(tb59->Text) || Convert::ToInt32(tb69->Text) || Convert::ToInt32(tb79->Text) || Convert::ToInt32(tb89->Text) != 0) {
+					   lbGrafoJ->Visible = true;
+				   }
+
+				   //Columna I
+				   if (Convert::ToInt32(tb08->Text) || Convert::ToInt32(tb18->Text) || Convert::ToInt32(tb28->Text) || Convert::ToInt32(tb38->Text) || Convert::ToInt32(tb48->Text) || Convert::ToInt32(tb58->Text) || Convert::ToInt32(tb68->Text) || Convert::ToInt32(tb78->Text) != 0) {
+					   lbGrafoI->Visible = true;
+				   }
+
+				   //Columna H
+				   if (Convert::ToInt32(tb07->Text) || Convert::ToInt32(tb17->Text) || Convert::ToInt32(tb27->Text) || Convert::ToInt32(tb37->Text) || Convert::ToInt32(tb47->Text) || Convert::ToInt32(tb57->Text) || Convert::ToInt32(tb67->Text) != 0) {
+					   lbGrafoH->Visible = true;
+				   }
+
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 12:
+
+				   //Columna L 
+				   if (Convert::ToInt32(tb011->Text) || Convert::ToInt32(tb0111->Text) || Convert::ToInt32(tb211->Text) || Convert::ToInt32(tb311->Text) || Convert::ToInt32(tb411->Text) || Convert::ToInt32(tb511->Text)
+					   || Convert::ToInt32(tb611->Text) || Convert::ToInt32(tb711->Text) || Convert::ToInt32(tb811->Text) || Convert::ToInt32(tb911->Text) || Convert::ToInt32(tb1011->Text) != 0)
+				   {
+					   lbGrafoL->Visible = true;
+				   }
+				   //Columna K
+				   if (Convert::ToInt32(tb010->Text) || Convert::ToInt32(tb0110->Text) || Convert::ToInt32(tb210->Text) || Convert::ToInt32(tb310->Text) || Convert::ToInt32(tb410->Text) || Convert::ToInt32(tb510->Text)
+					   || Convert::ToInt32(tb610->Text) || Convert::ToInt32(tb710->Text) || Convert::ToInt32(tb810->Text) || Convert::ToInt32(tb910->Text) != 0)
+				   {
+					   lbGrafoK->Visible = true;
+				   }
+				   //Columna J
+				   if (Convert::ToInt32(tb09->Text) || Convert::ToInt32(tb19->Text) || Convert::ToInt32(tb29->Text) || Convert::ToInt32(tb39->Text) || Convert::ToInt32(tb49->Text) || Convert::ToInt32(tb59->Text) || Convert::ToInt32(tb69->Text) || Convert::ToInt32(tb79->Text) || Convert::ToInt32(tb89->Text) != 0) {
+					   lbGrafoJ->Visible = true;
+				   }
+
+				   //Columna I
+				   if (Convert::ToInt32(tb08->Text) || Convert::ToInt32(tb18->Text) || Convert::ToInt32(tb28->Text) || Convert::ToInt32(tb38->Text) || Convert::ToInt32(tb48->Text) || Convert::ToInt32(tb58->Text) || Convert::ToInt32(tb68->Text) || Convert::ToInt32(tb78->Text) != 0) {
+					   lbGrafoI->Visible = true;
+				   }
+
+				   //Columna H
+				   if (Convert::ToInt32(tb07->Text) || Convert::ToInt32(tb17->Text) || Convert::ToInt32(tb27->Text) || Convert::ToInt32(tb37->Text) || Convert::ToInt32(tb47->Text) || Convert::ToInt32(tb57->Text) || Convert::ToInt32(tb67->Text) != 0) {
+					   lbGrafoH->Visible = true;
+				   }
+
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 13:
+
+				   // Columna M
+				   if (Convert::ToInt32(tb012->Text) || Convert::ToInt32(tb0112->Text) || Convert::ToInt32(tb212->Text) || Convert::ToInt32(tb312->Text) || Convert::ToInt32(tb412->Text) || Convert::ToInt32(tb512->Text)
+					   || Convert::ToInt32(tb612->Text) || Convert::ToInt32(tb712->Text) || Convert::ToInt32(tb812->Text) || Convert::ToInt32(tb912->Text) || Convert::ToInt32(tb1012->Text)
+					   || Convert::ToInt32(tb1112->Text) != 0)
+				   {
+					   lbGrafoM->Visible = true;
+				   }
+				   //Columna L 
+				   if (Convert::ToInt32(tb011->Text) || Convert::ToInt32(tb0111->Text) || Convert::ToInt32(tb211->Text) || Convert::ToInt32(tb311->Text) || Convert::ToInt32(tb411->Text) || Convert::ToInt32(tb511->Text)
+					   || Convert::ToInt32(tb611->Text) || Convert::ToInt32(tb711->Text) || Convert::ToInt32(tb811->Text) || Convert::ToInt32(tb911->Text) || Convert::ToInt32(tb1011->Text) != 0)
+				   {
+					   lbGrafoL->Visible = true;
+				   }
+				   //Columna K
+				   if (Convert::ToInt32(tb010->Text) || Convert::ToInt32(tb0110->Text) || Convert::ToInt32(tb210->Text) || Convert::ToInt32(tb310->Text) || Convert::ToInt32(tb410->Text) || Convert::ToInt32(tb510->Text)
+					   || Convert::ToInt32(tb610->Text) || Convert::ToInt32(tb710->Text) || Convert::ToInt32(tb810->Text) || Convert::ToInt32(tb910->Text) != 0)
+				   {
+					   lbGrafoK->Visible = true;
+				   }
+				   //Columna J
+				   if (Convert::ToInt32(tb09->Text) || Convert::ToInt32(tb19->Text) || Convert::ToInt32(tb29->Text) || Convert::ToInt32(tb39->Text) || Convert::ToInt32(tb49->Text) || Convert::ToInt32(tb59->Text) || Convert::ToInt32(tb69->Text) || Convert::ToInt32(tb79->Text) || Convert::ToInt32(tb89->Text) != 0) {
+					   lbGrafoJ->Visible = true;
+				   }
+
+				   //Columna I
+				   if (Convert::ToInt32(tb08->Text) || Convert::ToInt32(tb18->Text) || Convert::ToInt32(tb28->Text) || Convert::ToInt32(tb38->Text) || Convert::ToInt32(tb48->Text) || Convert::ToInt32(tb58->Text) || Convert::ToInt32(tb68->Text) || Convert::ToInt32(tb78->Text) != 0) {
+					   lbGrafoI->Visible = true;
+				   }
+
+				   //Columna H
+				   if (Convert::ToInt32(tb07->Text) || Convert::ToInt32(tb17->Text) || Convert::ToInt32(tb27->Text) || Convert::ToInt32(tb37->Text) || Convert::ToInt32(tb47->Text) || Convert::ToInt32(tb57->Text) || Convert::ToInt32(tb67->Text) != 0) {
+					   lbGrafoH->Visible = true;
+				   }
+
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 14:
+
+				   // Columna N
+
+				   if (Convert::ToInt32(tb013->Text) || Convert::ToInt32(tb0113->Text) || Convert::ToInt32(tb213->Text) || Convert::ToInt32(tb313->Text) || Convert::ToInt32(tb413->Text) || Convert::ToInt32(tb513->Text)
+					   || Convert::ToInt32(tb613->Text) || Convert::ToInt32(tb713->Text) || Convert::ToInt32(tb813->Text) || Convert::ToInt32(tb913->Text) || Convert::ToInt32(tb1013->Text)
+					   || Convert::ToInt32(tb1113->Text) || Convert::ToInt32(tb1213->Text) != 0)
+				   {
+					   lbGrafoN->Visible = true;
+				   }
+				   // Columna M
+				   if (Convert::ToInt32(tb012->Text) || Convert::ToInt32(tb0112->Text) || Convert::ToInt32(tb212->Text) || Convert::ToInt32(tb312->Text) || Convert::ToInt32(tb412->Text) || Convert::ToInt32(tb512->Text)
+					   || Convert::ToInt32(tb612->Text) || Convert::ToInt32(tb712->Text) || Convert::ToInt32(tb812->Text) || Convert::ToInt32(tb912->Text) || Convert::ToInt32(tb1012->Text)
+					   || Convert::ToInt32(tb1112->Text) != 0)
+				   {
+					   lbGrafoM->Visible = true;
+				   }
+				   //Columna L 
+				   if (Convert::ToInt32(tb011->Text) || Convert::ToInt32(tb0111->Text) || Convert::ToInt32(tb211->Text) || Convert::ToInt32(tb311->Text) || Convert::ToInt32(tb411->Text) || Convert::ToInt32(tb511->Text)
+					   || Convert::ToInt32(tb611->Text) || Convert::ToInt32(tb711->Text) || Convert::ToInt32(tb811->Text) || Convert::ToInt32(tb911->Text) || Convert::ToInt32(tb1011->Text) != 0)
+				   {
+					   lbGrafoL->Visible = true;
+				   }
+				   //Columna K
+				   if (Convert::ToInt32(tb010->Text) || Convert::ToInt32(tb0110->Text) || Convert::ToInt32(tb210->Text) || Convert::ToInt32(tb310->Text) || Convert::ToInt32(tb410->Text) || Convert::ToInt32(tb510->Text)
+					   || Convert::ToInt32(tb610->Text) || Convert::ToInt32(tb710->Text) || Convert::ToInt32(tb810->Text) || Convert::ToInt32(tb910->Text) != 0)
+				   {
+					   lbGrafoK->Visible = true;
+				   }
+				   //Columna J
+				   if (Convert::ToInt32(tb09->Text) || Convert::ToInt32(tb19->Text) || Convert::ToInt32(tb29->Text) || Convert::ToInt32(tb39->Text) || Convert::ToInt32(tb49->Text) || Convert::ToInt32(tb59->Text) || Convert::ToInt32(tb69->Text) || Convert::ToInt32(tb79->Text) || Convert::ToInt32(tb89->Text) != 0) {
+					   lbGrafoJ->Visible = true;
+				   }
+
+				   //Columna I
+				   if (Convert::ToInt32(tb08->Text) || Convert::ToInt32(tb18->Text) || Convert::ToInt32(tb28->Text) || Convert::ToInt32(tb38->Text) || Convert::ToInt32(tb48->Text) || Convert::ToInt32(tb58->Text) || Convert::ToInt32(tb68->Text) || Convert::ToInt32(tb78->Text) != 0) {
+					   lbGrafoI->Visible = true;
+				   }
+
+				   //Columna H
+				   if (Convert::ToInt32(tb07->Text) || Convert::ToInt32(tb17->Text) || Convert::ToInt32(tb27->Text) || Convert::ToInt32(tb37->Text) || Convert::ToInt32(tb47->Text) || Convert::ToInt32(tb57->Text) || Convert::ToInt32(tb67->Text) != 0) {
+					   lbGrafoH->Visible = true;
+				   }
+
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   case 15:
+
+
+				   // Columna O
+
+				   if (Convert::ToInt32(tb014->Text) || Convert::ToInt32(tb0114->Text) || Convert::ToInt32(tb214->Text) || Convert::ToInt32(tb314->Text) || Convert::ToInt32(tb414->Text) || Convert::ToInt32(tb514->Text)
+					   || Convert::ToInt32(tb614->Text) || Convert::ToInt32(tb714->Text) || Convert::ToInt32(tb814->Text) || Convert::ToInt32(tb914->Text) || Convert::ToInt32(tb1014->Text)
+					   || Convert::ToInt32(tb1114->Text) || Convert::ToInt32(tb1214->Text) || Convert::ToInt32(tb1314->Text) != 0)
+				   {
+					   lbGrafoO->Visible = true;
+				   }
+				   // Columna N
+
+				   if (Convert::ToInt32(tb013->Text) || Convert::ToInt32(tb0113->Text) || Convert::ToInt32(tb213->Text) || Convert::ToInt32(tb313->Text) || Convert::ToInt32(tb413->Text) || Convert::ToInt32(tb513->Text)
+					   || Convert::ToInt32(tb613->Text) || Convert::ToInt32(tb713->Text) || Convert::ToInt32(tb813->Text) || Convert::ToInt32(tb913->Text) || Convert::ToInt32(tb1013->Text)
+					   || Convert::ToInt32(tb1113->Text) || Convert::ToInt32(tb1213->Text) != 0)
+				   {
+					   lbGrafoN->Visible = true;
+				   }
+				   // Columna M
+				   if (Convert::ToInt32(tb012->Text) || Convert::ToInt32(tb0112->Text) || Convert::ToInt32(tb212->Text) || Convert::ToInt32(tb312->Text) || Convert::ToInt32(tb412->Text) || Convert::ToInt32(tb512->Text)
+					   || Convert::ToInt32(tb612->Text) || Convert::ToInt32(tb712->Text) || Convert::ToInt32(tb812->Text) || Convert::ToInt32(tb912->Text) || Convert::ToInt32(tb1012->Text)
+					   || Convert::ToInt32(tb1112->Text) != 0)
+				   {
+					   lbGrafoM->Visible = true;
+				   }
+				   //Columna L 
+				   if (Convert::ToInt32(tb011->Text) || Convert::ToInt32(tb0111->Text) || Convert::ToInt32(tb211->Text) || Convert::ToInt32(tb311->Text) || Convert::ToInt32(tb411->Text) || Convert::ToInt32(tb511->Text)
+					   || Convert::ToInt32(tb611->Text) || Convert::ToInt32(tb711->Text) || Convert::ToInt32(tb811->Text) || Convert::ToInt32(tb911->Text) || Convert::ToInt32(tb1011->Text) != 0)
+				   {
+					   lbGrafoL->Visible = true;
+				   }
+				   //Columna K
+				   if (Convert::ToInt32(tb010->Text) || Convert::ToInt32(tb0110->Text) || Convert::ToInt32(tb210->Text) || Convert::ToInt32(tb310->Text) || Convert::ToInt32(tb410->Text) || Convert::ToInt32(tb510->Text)
+					   || Convert::ToInt32(tb610->Text) || Convert::ToInt32(tb710->Text) || Convert::ToInt32(tb810->Text) || Convert::ToInt32(tb910->Text) != 0)
+				   {
+					   lbGrafoK->Visible = true;
+				   }
+				   //Columna J
+				   if (Convert::ToInt32(tb09->Text) || Convert::ToInt32(tb19->Text) || Convert::ToInt32(tb29->Text) || Convert::ToInt32(tb39->Text) || Convert::ToInt32(tb49->Text) || Convert::ToInt32(tb59->Text) || Convert::ToInt32(tb69->Text) || Convert::ToInt32(tb79->Text) || Convert::ToInt32(tb89->Text) != 0) {
+					   lbGrafoJ->Visible = true;
+				   }
+
+				   //Columna I
+				   if (Convert::ToInt32(tb08->Text) || Convert::ToInt32(tb18->Text) || Convert::ToInt32(tb28->Text) || Convert::ToInt32(tb38->Text) || Convert::ToInt32(tb48->Text) || Convert::ToInt32(tb58->Text) || Convert::ToInt32(tb68->Text) || Convert::ToInt32(tb78->Text) != 0) {
+					   lbGrafoI->Visible = true;
+				   }
+
+				   //Columna H
+				   if (Convert::ToInt32(tb07->Text) || Convert::ToInt32(tb17->Text) || Convert::ToInt32(tb27->Text) || Convert::ToInt32(tb37->Text) || Convert::ToInt32(tb47->Text) || Convert::ToInt32(tb57->Text) || Convert::ToInt32(tb67->Text) != 0) {
+					   lbGrafoH->Visible = true;
+				   }
+
+				   //Columna G
+				   if (Convert::ToInt32(tb06->Text) || Convert::ToInt32(tb16->Text) || Convert::ToInt32(tb26->Text) || Convert::ToInt32(tb36->Text) || Convert::ToInt32(tb46->Text) || Convert::ToInt32(tb56->Text) != 0) {
+					   lbGrafoG->Visible = true;
+				   }
+
+				   //Columna F
+				   if (Convert::ToInt32(tb05->Text) || Convert::ToInt32(tb15->Text) || Convert::ToInt32(tb25->Text) || Convert::ToInt32(tb35->Text) || Convert::ToInt32(tb45->Text) != 0) {
+					   lbGrafoF->Visible = true;
+				   }
+
+				   //Columna E
+				   if (Convert::ToInt32(tb04->Text) || Convert::ToInt32(tb14->Text) || Convert::ToInt32(tb24->Text) || Convert::ToInt32(tb34->Text) != 0) {
+					   lbGrafoE->Visible = true;
+				   }
+
+				   //Columna D
+				   if (Convert::ToInt32(tb03->Text) || Convert::ToInt32(tb13->Text) || Convert::ToInt32(tb23->Text) != 0) {
+					   lbGrafoD->Visible = true;
+				   }
+
+				   //Columna C
+				   if (Convert::ToInt32(tb02->Text) || Convert::ToInt32(tb12->Text) != 0) {
+					   lbGrafoC->Visible = true;
+				   }
+
+				   //Columna B
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   lbGrafoB->Visible = true;
+				   }
+				   break;
+
+			   }
+		   }
 		   void Dibujar(int n) {
 			   switch (n)
 			   {
@@ -3879,12 +4606,12 @@ namespace MateComputacional {
 				   //AB//
 				   if (Convert::ToInt32(tb01->Text) != 0) {
 					   Pen^ p = gcnew Pen(Color::Black, 3);
-					   buffer->Graphics->DrawLine(p, lbGrafoA->Left, lbGrafoA->Top, lbGrafoB->Left, lbGrafoB->Top);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
 					   lbGrafoB->Visible = true;//columna dif de 0
 					   lbGrafoA->Visible = true;// fila dif de 0
 				   }
 				   else
-					   lbGrafoB->Visible = false;// columna igual a 0
+					   ComprobarDespinte(5);
 
 				   //AC
 				   if (Convert::ToInt32(tb02->Text) != 0) {
@@ -3894,7 +4621,7 @@ namespace MateComputacional {
 					   lbGrafoA->Visible = true;
 				   }
 				   else
-					   lbGrafoC->Visible = false;
+					   ComprobarDespinte(5);
 
 				   //AD
 				   if (Convert::ToInt32(tb03->Text) != 0) {
@@ -3904,7 +4631,7 @@ namespace MateComputacional {
 					   lbGrafoA->Visible = true;
 				   }
 				   else
-					   lbGrafoD->Visible = false;
+					   ComprobarDespinte(5);
 
 				   //AE
 				   if (Convert::ToInt32(tb04->Text) != 0) {
@@ -3914,7 +4641,7 @@ namespace MateComputacional {
 					   lbGrafoA->Visible = true;
 				   }
 				   else
-					   lbGrafoE->Visible = false;
+					   ComprobarDespinte(5);
 
 				   //BC
 				   if (Convert::ToInt32(tb12->Text) != 0) {
@@ -3924,7 +4651,7 @@ namespace MateComputacional {
 					   lbGrafoB->Visible = true;
 				   }
 				   else
-					   lbGrafoC->Visible = false;
+					   ComprobarDespinte(5);
 
 				   //BD
 				   if (Convert::ToInt32(tb13->Text) != 0) {
@@ -3934,7 +4661,7 @@ namespace MateComputacional {
 					   lbGrafoB->Visible = true;
 				   }
 				   else
-					   lbGrafoD->Visible = false;
+					   ComprobarDespinte(5);
 
 				   //BE
 				   if (Convert::ToInt32(tb14->Text) != 0) {
@@ -3944,7 +4671,7 @@ namespace MateComputacional {
 					   lbGrafoB->Visible = true;
 				   }
 				   else
-					   lbGrafoE->Visible = false;
+					   ComprobarDespinte(5);
 
 				   //CD
 				   if (Convert::ToInt32(tb23->Text) != 0) {
@@ -3954,7 +4681,7 @@ namespace MateComputacional {
 					   lbGrafoC->Visible = true;
 				   }
 				   else
-					   lbGrafoD->Visible = false;
+					   ComprobarDespinte(5);
 
 				   //CE
 				   if (Convert::ToInt32(tb24->Text) != 0) {
@@ -3964,7 +4691,7 @@ namespace MateComputacional {
 					   lbGrafoC->Visible = true;
 				   }
 				   else
-					   lbGrafoE->Visible = false;
+					   ComprobarDespinte(5);
 
 				   //DE
 				   if (Convert::ToInt32(tb34->Text) != 0) {
@@ -3974,8 +4701,5486 @@ namespace MateComputacional {
 					   lbGrafoD->Visible = true;
 				   }
 				   else
-					   lbGrafoE->Visible = false;
+					   ComprobarDespinte(5);
 				   break;
+
+			   case 6:
+				   //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(6);
+				   break;
+
+			   case 7:
+				   //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(7);
+				   break;
+
+			   case 8:
+				   //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //AH
+				   if (Convert::ToInt32(tb07->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //BH
+				   if (Convert::ToInt32(tb17->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //CH
+				   if (Convert::ToInt32(tb27->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //DH
+				   if (Convert::ToInt32(tb37->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //EH
+				   if (Convert::ToInt32(tb47->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //FH
+				   if (Convert::ToInt32(tb57->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+
+				   //GH
+				   if (Convert::ToInt32(tb67->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(8);
+				   break;
+
+			   case 9:
+				   //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //AH
+				   if (Convert::ToInt32(tb07->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //AI
+				   if (Convert::ToInt32(tb08->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //BH
+				   if (Convert::ToInt32(tb17->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //BI
+				   if (Convert::ToInt32(tb18->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //CH
+				   if (Convert::ToInt32(tb27->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //CI
+				   if (Convert::ToInt32(tb28->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //DH
+				   if (Convert::ToInt32(tb37->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //DI
+				   if (Convert::ToInt32(tb38->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //EH
+				   if (Convert::ToInt32(tb47->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //EI
+				   if (Convert::ToInt32(tb48->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //FH
+				   if (Convert::ToInt32(tb57->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //FI
+				   if (Convert::ToInt32(tb58->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //GH
+				   if (Convert::ToInt32(tb67->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //GI
+				   if (Convert::ToInt32(tb68->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+
+				   //HI
+				   if (Convert::ToInt32(tb68->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(9);
+				   break;
+
+			   case 10:
+				   //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //AH
+				   if (Convert::ToInt32(tb07->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //AI
+				   if (Convert::ToInt32(tb08->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //AJ
+				   if (Convert::ToInt32(tb09->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //BH
+				   if (Convert::ToInt32(tb17->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //BI
+				   if (Convert::ToInt32(tb18->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //BJ
+				   if (Convert::ToInt32(tb19->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //CH
+				   if (Convert::ToInt32(tb27->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //CI
+				   if (Convert::ToInt32(tb28->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //CJ
+				   if (Convert::ToInt32(tb29->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //DH
+				   if (Convert::ToInt32(tb37->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //DI
+				   if (Convert::ToInt32(tb38->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //DJ
+				   if (Convert::ToInt32(tb39->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //EH
+				   if (Convert::ToInt32(tb47->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //EI
+				   if (Convert::ToInt32(tb48->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //EJ
+				   if (Convert::ToInt32(tb49->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //FH
+				   if (Convert::ToInt32(tb57->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //FI
+				   if (Convert::ToInt32(tb58->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //FJ
+				   if (Convert::ToInt32(tb59->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //GH
+				   if (Convert::ToInt32(tb67->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //GI
+				   if (Convert::ToInt32(tb68->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //GJ
+				   if (Convert::ToInt32(tb69->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //HI
+				   if (Convert::ToInt32(tb78->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //HJ
+				   if (Convert::ToInt32(tb79->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+
+				   //IJ
+				   if (Convert::ToInt32(tb89->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(10);
+				   break;
+
+			   case 11:
+				   //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //AH
+				   if (Convert::ToInt32(tb07->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //AI
+				   if (Convert::ToInt32(tb08->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //AJ
+				   if (Convert::ToInt32(tb09->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+				   //*-----      VAMOS DE A --  K k=10
+				   //AK
+				   if (Convert::ToInt32(tb010->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //BH
+				   if (Convert::ToInt32(tb17->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //BI
+				   if (Convert::ToInt32(tb18->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //BJ
+				   if (Convert::ToInt32(tb19->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+
+				   //BK------------------------------------
+				   if (Convert::ToInt32(tb0110->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //CH
+				   if (Convert::ToInt32(tb27->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //CI
+				   if (Convert::ToInt32(tb28->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //CJ
+				   if (Convert::ToInt32(tb29->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //CK ---------------------------------------------------------------
+				   if (Convert::ToInt32(tb210->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //DH
+				   if (Convert::ToInt32(tb37->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //DI
+				   if (Convert::ToInt32(tb38->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //DJ
+				   if (Convert::ToInt32(tb39->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //DK  -----------------------------------------////////////////////////////
+				   if (Convert::ToInt32(tb310->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //EH
+				   if (Convert::ToInt32(tb47->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //EI
+				   if (Convert::ToInt32(tb48->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //EJ
+				   if (Convert::ToInt32(tb49->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //EK-----------------------------------//////////////
+				   if (Convert::ToInt32(tb410->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //FH
+				   if (Convert::ToInt32(tb57->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //FI
+				   if (Convert::ToInt32(tb58->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //FJ
+				   if (Convert::ToInt32(tb59->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //FK --------------//////////////////////////
+				   if (Convert::ToInt32(tb510->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //GH
+				   if (Convert::ToInt32(tb67->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //GI
+				   if (Convert::ToInt32(tb68->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //GJ
+				   if (Convert::ToInt32(tb69->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //GK ---------------///////// 
+				   if (Convert::ToInt32(tb610->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //HI
+				   if (Convert::ToInt32(tb78->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //HJ
+				   if (Convert::ToInt32(tb79->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //HK      ---------------------    ///////////////////
+				   if (Convert::ToInt32(tb710->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //IJ
+				   if (Convert::ToInt32(tb89->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //IK  --------///////////////////////
+				   if (Convert::ToInt32(tb810->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //JK  --------///////////////////////
+				   if (Convert::ToInt32(tb910->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+
+				   break;
+
+
+			   case 12://----#######################################################
+				   //     ENTONCES POR LO TANTO 
+				   //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AH
+				   if (Convert::ToInt32(tb07->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AI
+				   if (Convert::ToInt32(tb08->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AJ
+				   if (Convert::ToInt32(tb09->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //AK
+				   if (Convert::ToInt32(tb010->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+				   //*-----      VAMOS DE A --  L   L =11
+				   //AL
+				   if (Convert::ToInt32(tb011->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //BH
+				   if (Convert::ToInt32(tb17->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //BI
+				   if (Convert::ToInt32(tb18->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //BJ
+				   if (Convert::ToInt32(tb19->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+
+				   //BK------------------------------------
+				   if (Convert::ToInt32(tb0110->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //*-----      VAMOS DE B =1--  L   L =11
+				   //BL
+
+				   if (Convert::ToInt32(tb0111->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //CH
+				   if (Convert::ToInt32(tb27->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //CI
+				   if (Convert::ToInt32(tb28->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //CJ
+				   if (Convert::ToInt32(tb29->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //CK ---------------------------------------------------------------
+				   if (Convert::ToInt32(tb210->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //*-----      VAMOS DE C=2 --  L   L =11
+				   //CL
+				   if (Convert::ToInt32(tb211->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //DH
+				   if (Convert::ToInt32(tb37->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //DI
+				   if (Convert::ToInt32(tb38->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //DJ
+				   if (Convert::ToInt32(tb39->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //DK  -----------------------------------------////////////////////////////
+				   if (Convert::ToInt32(tb310->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+				   //DL -----------------  D=3     L=11
+				   if (Convert::ToInt32(tb311->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //EH
+				   if (Convert::ToInt32(tb47->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //EI
+				   if (Convert::ToInt32(tb48->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //EJ
+				   if (Convert::ToInt32(tb49->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //EK-----------------------------------//////////////
+				   if (Convert::ToInt32(tb410->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //EL -----------------  E=4     L=11
+				   if (Convert::ToInt32(tb411->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //FH
+				   if (Convert::ToInt32(tb57->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //FI
+				   if (Convert::ToInt32(tb58->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //FJ
+				   if (Convert::ToInt32(tb59->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //FK --------------//////////////////////////
+				   if (Convert::ToInt32(tb510->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //FL -----------------  F=5     L=11 /////////
+				   if (Convert::ToInt32(tb511->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //GH
+				   if (Convert::ToInt32(tb67->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //GI
+				   if (Convert::ToInt32(tb68->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //GJ
+				   if (Convert::ToInt32(tb69->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //GK ---------------///////// 
+				   if (Convert::ToInt32(tb610->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(11);
+
+				   //GL -----------------  G=6    L=11 /////////
+				   if (Convert::ToInt32(tb611->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //HI
+				   if (Convert::ToInt32(tb78->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //HJ
+				   if (Convert::ToInt32(tb79->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //HK      ---------------------    ///////////////////
+				   if (Convert::ToInt32(tb710->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //HL -----------------  H=7     L=11 /////////
+				   if (Convert::ToInt32(tb711->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //IJ
+				   if (Convert::ToInt32(tb89->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //IK  --------///////////////////////
+				   if (Convert::ToInt32(tb810->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //IL -----------------  I=8     L=11 /////////
+				   if (Convert::ToInt32(tb811->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //JK  --------///////////////////////
+				   if (Convert::ToInt32(tb910->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+				   //JL  --------      J=9     ---  L=11
+				   if (Convert::ToInt32(tb911->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   // KL    -----    K=10 ///////   L=11
+				   if (Convert::ToInt32(tb1011->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(12);
+
+				   //*******************************************************  TERMINE CASE 12
+				   break;
+
+			   case 13://----#######################################################
+			  //     ENTONCES POR LO TANTO 
+			  //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AH
+				   if (Convert::ToInt32(tb07->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AI
+				   if (Convert::ToInt32(tb08->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AJ
+				   if (Convert::ToInt32(tb09->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //AK
+				   if (Convert::ToInt32(tb010->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+				   //*-----      VAMOS DE A --  L   L =11
+				   //AL
+				   if (Convert::ToInt32(tb011->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+				   //AM            A=0   M= 12
+				   if (Convert::ToInt32(tb012->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+
+
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //BH
+				   if (Convert::ToInt32(tb17->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //BI
+				   if (Convert::ToInt32(tb18->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //BJ
+				   if (Convert::ToInt32(tb19->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+
+				   //BK------------------------------------
+				   if (Convert::ToInt32(tb0110->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //*-----      VAMOS DE B =1--  L   L =11
+				   //BL
+
+				   if (Convert::ToInt32(tb0111->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //BM            B=1  M= 12   **************
+				   if (Convert::ToInt32(tb0112->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CH
+				   if (Convert::ToInt32(tb27->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CI
+				   if (Convert::ToInt32(tb28->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CJ
+				   if (Convert::ToInt32(tb29->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CK ---------------------------------------------------------------
+				   if (Convert::ToInt32(tb210->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //*-----      VAMOS DE C=2 --  L   L =11
+				   //CL
+				   if (Convert::ToInt32(tb211->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //CM            C=2   M= 12       ****************
+				   if (Convert::ToInt32(tb212->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //DH
+				   if (Convert::ToInt32(tb37->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //DI
+				   if (Convert::ToInt32(tb38->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //DJ
+				   if (Convert::ToInt32(tb39->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //DK  -----------------------------------------////////////////////////////
+				   if (Convert::ToInt32(tb310->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+				   //DL -----------------  D=3     L=11
+				   if (Convert::ToInt32(tb311->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //DM -----------------  D=3     M=12
+				   if (Convert::ToInt32(tb312->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //EH
+				   if (Convert::ToInt32(tb47->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //EI
+				   if (Convert::ToInt32(tb48->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //EJ
+				   if (Convert::ToInt32(tb49->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //EK-----------------------------------//////////////
+				   if (Convert::ToInt32(tb410->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //EL -----------------  E=4     L=11
+				   if (Convert::ToInt32(tb411->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //EM -----------------  E=4     M=12
+				   if (Convert::ToInt32(tb412->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //FH
+				   if (Convert::ToInt32(tb57->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //FI
+				   if (Convert::ToInt32(tb58->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //FJ
+				   if (Convert::ToInt32(tb59->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //FK --------------//////////////////////////
+				   if (Convert::ToInt32(tb510->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //FL -----------------  F=5     L=11 /////////
+				   if (Convert::ToInt32(tb511->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //FM -----------------  F=5     M=12 /////////
+				   if (Convert::ToInt32(tb512->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //GH
+				   if (Convert::ToInt32(tb67->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //GI
+				   if (Convert::ToInt32(tb68->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //GJ
+				   if (Convert::ToInt32(tb69->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //GK ---------------///////// 
+				   if (Convert::ToInt32(tb610->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //GL -----------------  G=6    L=11 /////////
+				   if (Convert::ToInt32(tb611->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //GM -----------------  G=6    L=12 /////////
+				   if (Convert::ToInt32(tb612->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //HI
+				   if (Convert::ToInt32(tb78->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //HJ
+				   if (Convert::ToInt32(tb79->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //HK      ---------------------    ///////////////////
+				   if (Convert::ToInt32(tb710->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //HL -----------------  H=7     L=11 /////////
+				   if (Convert::ToInt32(tb711->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //HM -----------------  H=7     M=12 /////////
+				   if (Convert::ToInt32(tb712->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //IJ
+				   if (Convert::ToInt32(tb89->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //IK  --------///////////////////////
+				   if (Convert::ToInt32(tb810->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //IL -----------------  I=8     L=11 /////////
+				   if (Convert::ToInt32(tb811->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //IM -----------------  I=8     M=12 /////////
+				   if (Convert::ToInt32(tb812->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //JK  --------///////////////////////
+				   if (Convert::ToInt32(tb910->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+				   //JL  --------      J=9     ---  L=11
+				   if (Convert::ToInt32(tb911->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   //JM  --------      J=9     ---  M=12
+				   if (Convert::ToInt32(tb912->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+
+				   // KL    -----    K=10 ///////   L=11
+				   if (Convert::ToInt32(tb1011->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   // KM    -----    K=10 ///////   M=12
+				   if (Convert::ToInt32(tb1012->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+
+				   // LM    -----    L=11 ///////   M=12
+				   if (Convert::ToInt32(tb1112->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoL->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoL->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(13);
+				   //*******************************************************  TERMINE CASE 12
+				   break;
+
+
+			   case 14://----********************************************
+
+		 //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AH
+				   if (Convert::ToInt32(tb07->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AI
+				   if (Convert::ToInt32(tb08->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AJ
+				   if (Convert::ToInt32(tb09->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AK
+				   if (Convert::ToInt32(tb010->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+				   //*-----      VAMOS DE A --  L   L =11
+				   //AL
+				   if (Convert::ToInt32(tb011->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+				   //AM            A=0   M= 12
+				   if (Convert::ToInt32(tb012->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //AN            A=0   N= 13   ////////////
+				   if (Convert::ToInt32(tb013->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+
+
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BH
+				   if (Convert::ToInt32(tb17->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BI
+				   if (Convert::ToInt32(tb18->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BJ
+				   if (Convert::ToInt32(tb19->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+
+				   //BK------------------------------------
+				   if (Convert::ToInt32(tb0110->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //*-----      VAMOS DE B =1--  L   L =11
+				   //BL
+
+				   if (Convert::ToInt32(tb0111->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BM            B=1  M= 12   **************
+				   if (Convert::ToInt32(tb0112->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //BN           B=1  N= 13   **************
+				   if (Convert::ToInt32(tb0113->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CH
+				   if (Convert::ToInt32(tb27->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CI
+				   if (Convert::ToInt32(tb28->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CJ
+				   if (Convert::ToInt32(tb29->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CK ---------------------------------------------------------------
+				   if (Convert::ToInt32(tb210->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //*-----      VAMOS DE C=2 --  L   L =11
+				   //CL
+				   if (Convert::ToInt32(tb211->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CM            C=2   M= 12       ****************
+				   if (Convert::ToInt32(tb212->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //CN           C=2   N= 13       ****************
+				   if (Convert::ToInt32(tb213->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DH
+				   if (Convert::ToInt32(tb37->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DI
+				   if (Convert::ToInt32(tb38->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DJ
+				   if (Convert::ToInt32(tb39->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DK  -----------------------------------------////////////////////////////
+				   if (Convert::ToInt32(tb310->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+				   //DL -----------------  D=3     L=11
+				   if (Convert::ToInt32(tb311->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DM -----------------  D=3     M=12
+				   if (Convert::ToInt32(tb312->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //DN -----------------  D=3     N=13
+				   if (Convert::ToInt32(tb313->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //EH
+				   if (Convert::ToInt32(tb47->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //EI
+				   if (Convert::ToInt32(tb48->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //EJ
+				   if (Convert::ToInt32(tb49->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //EK-----------------------------------//////////////
+				   if (Convert::ToInt32(tb410->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //EL -----------------  E=4     L=11
+				   if (Convert::ToInt32(tb411->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //EM -----------------  E=4     M=12
+				   if (Convert::ToInt32(tb412->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //EN -----------------  E=4     N=13
+				   if (Convert::ToInt32(tb413->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //FH
+				   if (Convert::ToInt32(tb57->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //FI
+				   if (Convert::ToInt32(tb58->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //FJ
+				   if (Convert::ToInt32(tb59->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //FK --------------//////////////////////////
+				   if (Convert::ToInt32(tb510->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //FL -----------------  F=5     L=11 /////////
+				   if (Convert::ToInt32(tb511->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //FM -----------------  F=5     M=12 /////////
+				   if (Convert::ToInt32(tb512->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //FN -----------------  F=5     N=13 /////////***********
+				   if (Convert::ToInt32(tb513->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //GH
+				   if (Convert::ToInt32(tb67->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //GI
+				   if (Convert::ToInt32(tb68->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //GJ
+				   if (Convert::ToInt32(tb69->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //GK ---------------///////// 
+				   if (Convert::ToInt32(tb610->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //GL -----------------  G=6    L=11 /////////
+				   if (Convert::ToInt32(tb611->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //GM -----------------  G=6    L=12 /////////
+				   if (Convert::ToInt32(tb612->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //GN -----------------  G=6    N=13 /////////
+				   if (Convert::ToInt32(tb613->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+
+				   //HI
+				   if (Convert::ToInt32(tb78->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //HJ
+				   if (Convert::ToInt32(tb79->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //HK      ---------------------    ///////////////////
+				   if (Convert::ToInt32(tb710->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //HL -----------------  H=7     L=11 /////////
+				   if (Convert::ToInt32(tb711->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //HM -----------------  H=7     M=12 /////////
+				   if (Convert::ToInt32(tb712->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //HN -----------------  H=7     N=13 /////////
+				   if (Convert::ToInt32(tb713->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //IJ
+				   if (Convert::ToInt32(tb89->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //IK  --------///////////////////////
+				   if (Convert::ToInt32(tb810->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //IL -----------------  I=8     L=11 /////////
+				   if (Convert::ToInt32(tb811->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //IM -----------------  I=8     M=12 /////////
+				   if (Convert::ToInt32(tb812->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //IN -----------------  I=8     N=13 /////////
+				   if (Convert::ToInt32(tb813->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //JK  --------///////////////////////
+				   if (Convert::ToInt32(tb910->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+				   //JL  --------      J=9     ---  L=11
+				   if (Convert::ToInt32(tb911->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //JM  --------      J=9     ---  M=12
+				   if (Convert::ToInt32(tb912->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   //JN  --------      J=9     ---  N=13
+				   if (Convert::ToInt32(tb913->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+
+				   // KL    -----    K=10 ///////   L=11
+				   if (Convert::ToInt32(tb1011->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   // KM    -----    K=10 ///////   M=12
+				   if (Convert::ToInt32(tb1012->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   // KN   -----    K=10    N=13  
+				   if (Convert::ToInt32(tb1013->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   // LM    -----    L=11 ///////   M=12
+				   if (Convert::ToInt32(tb1112->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoL->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoL->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   // LN    -----    L=11	   N=13
+				   if (Convert::ToInt32(tb1113->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoL->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoL->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+
+				   // MN    -----    M=12	   N=13
+				   if (Convert::ToInt32(tb1213->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoM->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoM->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(14);
+				   //*******************************************************  TERMINE CASE 13
+				   break;
+
+
+			   case 15://----********************************************
+
+				  //AB//
+				   if (Convert::ToInt32(tb01->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoB->Location);
+					   lbGrafoB->Visible = true;//columna dif de 0
+					   lbGrafoA->Visible = true;// fila dif de 0
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AC
+				   if (Convert::ToInt32(tb02->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AD
+				   if (Convert::ToInt32(tb03->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AE
+				   if (Convert::ToInt32(tb04->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AF
+				   if (Convert::ToInt32(tb05->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AG
+				   if (Convert::ToInt32(tb06->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AH
+				   if (Convert::ToInt32(tb07->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AI
+				   if (Convert::ToInt32(tb08->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AJ
+				   if (Convert::ToInt32(tb09->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AK
+				   if (Convert::ToInt32(tb010->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+				   //*-----      VAMOS DE A --  L   L =11
+				   //AL
+				   if (Convert::ToInt32(tb011->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+				   //AM            A=0   M= 12
+				   if (Convert::ToInt32(tb012->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AN            A=0   N= 13   ////////////
+				   if (Convert::ToInt32(tb013->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //AO           A=0   O=14   ////////////
+				   if (Convert::ToInt32(tb014->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoA->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoA->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BC
+				   if (Convert::ToInt32(tb12->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoC->Location);
+					   lbGrafoC->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BD
+				   if (Convert::ToInt32(tb13->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BE
+				   if (Convert::ToInt32(tb14->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BF
+				   if (Convert::ToInt32(tb15->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BG
+				   if (Convert::ToInt32(tb16->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BH
+				   if (Convert::ToInt32(tb17->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BI
+				   if (Convert::ToInt32(tb18->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BJ
+				   if (Convert::ToInt32(tb19->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+
+				   //BK------------------------------------
+				   if (Convert::ToInt32(tb0110->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //*-----      VAMOS DE B =1--  L   L =11
+				   //BL
+
+				   if (Convert::ToInt32(tb0111->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BM            B=1  M= 12   **************
+				   if (Convert::ToInt32(tb0112->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BN           B=1  N= 13   **************
+				   if (Convert::ToInt32(tb0113->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //BO           B=1  O= 14   **************
+				   if (Convert::ToInt32(tb0114->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoB->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoB->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CD
+				   if (Convert::ToInt32(tb23->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoD->Location);
+					   lbGrafoD->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CE
+				   if (Convert::ToInt32(tb24->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CF
+				   if (Convert::ToInt32(tb25->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CG
+				   if (Convert::ToInt32(tb26->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CH
+				   if (Convert::ToInt32(tb27->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CI
+				   if (Convert::ToInt32(tb28->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CJ
+				   if (Convert::ToInt32(tb29->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CK ---------------------------------------------------------------
+				   if (Convert::ToInt32(tb210->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //*-----      VAMOS DE C=2 --  L   L =11
+				   //CL
+				   if (Convert::ToInt32(tb211->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CM            C=2   M= 12       ****************
+				   if (Convert::ToInt32(tb212->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CN           C=2   N= 13       ****************
+				   if (Convert::ToInt32(tb213->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //CO           C=2   O=14       ****************
+				   if (Convert::ToInt32(tb214->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoC->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoC->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DE
+				   if (Convert::ToInt32(tb34->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoE->Location);
+					   lbGrafoE->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DF
+				   if (Convert::ToInt32(tb35->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DG
+				   if (Convert::ToInt32(tb36->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DH
+				   if (Convert::ToInt32(tb37->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DI
+				   if (Convert::ToInt32(tb38->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DJ
+				   if (Convert::ToInt32(tb39->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DK  -----------------------------------------////////////////////////////
+				   if (Convert::ToInt32(tb310->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+				   //DL -----------------  D=3     L=11
+				   if (Convert::ToInt32(tb311->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DM -----------------  D=3     M=12
+				   if (Convert::ToInt32(tb312->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DN -----------------  D=3     N=13
+				   if (Convert::ToInt32(tb313->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //DO -----------------  D=3     O=14
+				   if (Convert::ToInt32(tb314->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoD->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoD->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EF
+				   if (Convert::ToInt32(tb45->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoF->Location);
+					   lbGrafoF->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EG
+				   if (Convert::ToInt32(tb46->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EH
+				   if (Convert::ToInt32(tb47->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EI
+				   if (Convert::ToInt32(tb48->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EJ
+				   if (Convert::ToInt32(tb49->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EK-----------------------------------//////////////
+				   if (Convert::ToInt32(tb410->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EL -----------------  E=4     L=11
+				   if (Convert::ToInt32(tb411->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EM -----------------  E=4     M=12
+				   if (Convert::ToInt32(tb412->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EN -----------------  E=4     N=13
+				   if (Convert::ToInt32(tb413->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //EO -----------------  E=4     O=14
+				   if (Convert::ToInt32(tb414->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoE->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoE->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FG
+				   if (Convert::ToInt32(tb56->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoG->Location);
+					   lbGrafoG->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FH
+				   if (Convert::ToInt32(tb57->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FI
+				   if (Convert::ToInt32(tb58->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FJ
+				   if (Convert::ToInt32(tb59->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FK --------------//////////////////////////
+				   if (Convert::ToInt32(tb510->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FL -----------------  F=5     L=11 /////////
+				   if (Convert::ToInt32(tb511->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FM -----------------  F=5     M=12 /////////
+				   if (Convert::ToInt32(tb512->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FN -----------------  F=5     N=13 /////////***********
+				   if (Convert::ToInt32(tb513->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //FO -----------------  F=5     O=14 /////////***********
+				   if (Convert::ToInt32(tb514->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoF->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoF->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //GH
+				   if (Convert::ToInt32(tb67->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoH->Location);
+					   lbGrafoH->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //GI
+				   if (Convert::ToInt32(tb68->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //GJ
+				   if (Convert::ToInt32(tb69->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //GK ---------------///////// 
+				   if (Convert::ToInt32(tb610->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //GL -----------------  G=6    L=11 /////////
+				   if (Convert::ToInt32(tb611->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //GM -----------------  G=6    L=12 /////////
+				   if (Convert::ToInt32(tb612->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //GN -----------------  G=6    N=13 /////////
+				   if (Convert::ToInt32(tb613->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //GO -----------------  G=6    O=14 /////////
+				   if (Convert::ToInt32(tb614->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoG->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoG->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //HI
+				   if (Convert::ToInt32(tb78->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoI->Location);
+					   lbGrafoI->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //HJ
+				   if (Convert::ToInt32(tb79->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //HK      ---------------------    ///////////////////
+				   if (Convert::ToInt32(tb710->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //HL -----------------  H=7     L=11 /////////
+				   if (Convert::ToInt32(tb711->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //HM -----------------  H=7     M=12 /////////
+				   if (Convert::ToInt32(tb712->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //HN -----------------  H=7     N=13 /////////
+				   if (Convert::ToInt32(tb713->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //HO -----------------  H=7     O=14 /////////
+				   if (Convert::ToInt32(tb714->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoH->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoH->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //IJ
+				   if (Convert::ToInt32(tb89->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoJ->Location);
+					   lbGrafoJ->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //IK  --------///////////////////////
+				   if (Convert::ToInt32(tb810->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //IL -----------------  I=8     L=11 /////////
+				   if (Convert::ToInt32(tb811->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //IM -----------------  I=8     M=12 /////////
+				   if (Convert::ToInt32(tb812->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //IN -----------------  I=8     N=13 /////////
+				   if (Convert::ToInt32(tb813->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //IO -----------------  I=8      O= 14 /////////
+				   if (Convert::ToInt32(tb814->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoI->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoI->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+
+				   //JK  --------///////////////////////
+				   if (Convert::ToInt32(tb910->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoK->Location);
+					   lbGrafoK->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+				   //JL  --------      J=9     ---  L=11
+				   if (Convert::ToInt32(tb911->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //JM  --------      J=9     ---  M=12
+				   if (Convert::ToInt32(tb912->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //JN  --------      J=9     ---  N=13
+				   if (Convert::ToInt32(tb913->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   //JO  --------      J=9     ---  O=14
+				   if (Convert::ToInt32(tb914->Text) != 0) {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoJ->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoJ->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // KL    -----    K=10 ///////   L=11
+				   if (Convert::ToInt32(tb1011->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoL->Location);
+					   lbGrafoL->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // KM    -----    K=10 ///////   M=12
+				   if (Convert::ToInt32(tb1012->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // KN   -----    K=10    N=13  
+				   if (Convert::ToInt32(tb1013->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // KO   -----    K=10    O=14 ********************
+				   if (Convert::ToInt32(tb1014->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoK->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoK->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // LM    -----    L=11 ///////   M=12
+				   if (Convert::ToInt32(tb1112->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoL->Location, lbGrafoM->Location);
+					   lbGrafoM->Visible = true;
+					   lbGrafoL->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // LN    -----    L=11	   N=13
+				   if (Convert::ToInt32(tb1113->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoL->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoL->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // LO    -----    L=11	   O=14
+				   if (Convert::ToInt32(tb1114->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoL->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoL->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // MN    -----    M=12	   N=13
+				   if (Convert::ToInt32(tb1213->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoM->Location, lbGrafoN->Location);
+					   lbGrafoN->Visible = true;
+					   lbGrafoM->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // MO    -----    M=12	   O=14
+				   if (Convert::ToInt32(tb1214->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoM->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoM->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+
+				   // NO    -----    N=13	   O=14
+				   if (Convert::ToInt32(tb1314->Text) != 0)
+				   {
+					   Pen^ p = gcnew Pen(Color::Black, 3);
+					   buffer->Graphics->DrawLine(p, lbGrafoN->Location, lbGrafoO->Location);
+					   lbGrafoO->Visible = true;
+					   lbGrafoN->Visible = true;
+				   }
+				   else
+					   ComprobarDespinte(15);
+				   //*******************************************************  TERMINE CASE 13
+				   break;
+				   //------- VAMOS POR EL 15
 			   }
 		   }
 		   void Limpiar(int n)

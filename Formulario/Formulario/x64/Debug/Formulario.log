@@ -1,10 +1,10 @@
 ﻿  MyForm.cpp
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9584,36): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9588,34): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9592,28): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9595,33): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9599,28): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9606,17): warning C4244: 'inicializando': conversión de 'wchar_t' a 'char'; posible pérdida de datos
-D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(9607,15): warning C4244: 'inicializando': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(15789,36): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(15793,34): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(15797,28): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(15800,33): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(15804,28): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(15811,17): warning C4244: 'inicializando': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\Formulario\MyForm.h(15812,15): warning C4244: 'inicializando': conversión de 'wchar_t' a 'char'; posible pérdida de datos
   MyForm.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   Formulario.vcxproj -> D:\UPC\CICLO 4\Matematica Computacional\TA\Mat.-computacional-Grupo03\Formulario\x64\Debug\Formulario.exe

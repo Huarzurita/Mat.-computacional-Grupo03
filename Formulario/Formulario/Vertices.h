@@ -6,58 +6,58 @@ class Vertices
 {
 private:
 	int ab; int ac; int ad; int ae; int af; int ag; int ah; int ai; int aj; int ak; int al; int am; int an; int ao;
-			int bc; int bd; int be; int bf; int bg; int bh; int bi; int bj; int bk; int bl; int bm; int bn; int bo;
-					int cd; int ce; int cf; int cg; int ch; int ci; int cj; int ck; int cl; int cm; int cn; int co;
-							int de; int df; int dg; int dh; int di; int dj; int dk; int dl; int dm; int dn; int doo;
-									int ef; int eg; int eh; int ei; int ej; int ek; int el; int em; int en; int eo;
-											int fg; int fh; int fi; int fj; int fk; int fl; int fm; int fn; int fo;
-													int gh; int gi; int gj; int gk; int gl; int gm; int gn; int go;
-															int hi; int hj; int hk; int hl; int hm; int hn; int ho;
-																	int ij; int ik; int il; int im; int in; int io;
-																			int jk; int jl; int jm; int jn; int jo;
-																					int kl; int km; int kn; int ko;
-																							int lm; int ln; int lo;
-																									int mn; int mo;
-																											int no;
-	
+	int bc; int bd; int be; int bf; int bg; int bh; int bi; int bj; int bk; int bl; int bm; int bn; int bo;
+	int cd; int ce; int cf; int cg; int ch; int ci; int cj; int ck; int cl; int cm; int cn; int co;
+	int de; int df; int dg; int dh; int di; int dj; int dk; int dl; int dm; int dn; int doo;
+	int ef; int eg; int eh; int ei; int ej; int ek; int el; int em; int en; int eo;
+	int fg; int fh; int fi; int fj; int fk; int fl; int fm; int fn; int fo;
+	int gh; int gi; int gj; int gk; int gl; int gm; int gn; int go;
+	int hi; int hj; int hk; int hl; int hm; int hn; int ho;
+	int ij; int ik; int il; int im; int in; int io;
+	int jk; int jl; int jm; int jn; int jo;
+	int kl; int km; int kn; int ko;
+	int lm; int ln; int lo;
+	int mn; int mo;
+	int no;
 
-	
-	vector<Vertice*> A ;
-	vector<Vertice*> B ;
-	vector<Vertice*> C ;
-	vector<Vertice*> D ;
-	vector<Vertice*> E ;
-	vector<Vertice*> F ;
-	vector<Vertice*> G ;
-	vector<Vertice*> H ;
-	vector<Vertice*> I ;
-	vector<Vertice*> J ;
-	vector<Vertice*> K ;
-	vector<Vertice*> L ;
-	vector<Vertice*> M ;
-	vector<Vertice*> N ;
-	vector<Vertice*> O ;
+
+
+	vector<Vertice*> A;
+	vector<Vertice*> B;
+	vector<Vertice*> C;
+	vector<Vertice*> D;
+	vector<Vertice*> E;
+	vector<Vertice*> F;
+	vector<Vertice*> G;
+	vector<Vertice*> H;
+	vector<Vertice*> I;
+	vector<Vertice*> J;
+	vector<Vertice*> K;
+	vector<Vertice*> L;
+	vector<Vertice*> M;
+	vector<Vertice*> N;
+	vector<Vertice*> O;
 
 	int rspta;
 	string caminoMin;
 public:
-	
+
 	//van TODOS LOS DATOS DE LA MATRIZ (11 CONSTRUCTORES)
 	//5
 	Vertices(int ab, int ac, int ad, int ae,
-					 int bc, int bd, int be,
-							 int cd, int ce,
-									 int de,int nele,char Vinicial,char Vfinal) : ab(ab),ac(ac),ad(ad),ae(ae),
-													  bc(bc),bd(bd),be(be),
-															 cd(cd),ce(ce),
-																	de(de) {
+		int bc, int bd, int be,
+		int cd, int ce,
+		int de, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae),
+		bc(bc), bd(bd), be(be),
+		cd(cd), ce(ce),
+		de(de) {
 		//Asginar pesos y Letra de entrada a cada Vertice
-		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae)};
+		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be) };
 		C = { new Vertice('A',ac),new Vertice('B',bc),new Vertice('D',cd),new Vertice('E',ce) };
 		D = { new Vertice('A',ad),new Vertice('B',bd),new Vertice('C',cd),new Vertice('E',de) };
 		E = { new Vertice('A',ae),new Vertice('B',be),new Vertice('C',ce),new Vertice('D',de) };
-		
+
 		//Objetos filas
 		ValorTabla* a = new ValorTabla();
 		ValorTabla* b = new ValorTabla();
@@ -74,55 +74,55 @@ public:
 		case 'E': e->setCompletado(); e->setLetraProcedencia('E');  e->setValorD(0); break;
 		}
 		//ITERACIONES
-		int iterador=0;
-		while (iterador<nele)
+		int iterador = 0;
+		while (iterador < nele)
 		{
 			int aux, aux2, menor, contAux;
 			bool infinit;
 			//Analisis de cada fila en la iteracion
-			if (a->getCompletado()==false) {//si aun no tiene valor definitivo
+			if (a->getCompletado() == false) {//si aun no tiene valor definitivo
 				contAux = menor = aux = aux2 = 0;
 				for (size_t i = 0; i < A.size(); i++)//para cada uno de los valores que llegan al vertice
-				{	
-					
-					switch (A[i]->getLetra()){
+				{
+
+					switch (A[i]->getLetra()) {
 					case 'B':infinit = b->getInfinito(); break;
-					case 'C':infinit = c->getInfinito(); break;				
-					case 'D':infinit = d->getInfinito(); break;					
-					case 'E':infinit = e->getInfinito(); break;	
+					case 'C':infinit = c->getInfinito(); break;
+					case 'D':infinit = d->getInfinito(); break;
+					case 'E':infinit = e->getInfinito(); break;
 					}
-					if (A[i]->getPeso() != 0 && infinit==false)//si el peso de esa relacion es diferente de 0(o sea que si hay camino xd) Y si el valor de la letra de la tabla a analizar no es infinito
+					if (A[i]->getPeso() != 0 && infinit == false)//si el peso de esa relacion es diferente de 0(o sea que si hay camino xd) Y si el valor de la letra de la tabla a analizar no es infinito
 					{
 						switch (A[i]->getLetra())//no puede tener letra de ella misma (analisis de letras que llegan a A)
 						{
-						case 'B':	
+						case 'B':
 							if (b->getCompletado() == false)
 								aux2 = b->getValorT2();
 							else
 								aux2 = b->getValorD();
 							break;
-						case 'C': 
+						case 'C':
 							if (c->getCompletado() == false)
 								aux2 = c->getValorT2();
 							else
 								aux2 = c->getValorD();
 							break;
-						case 'D': 
+						case 'D':
 							if (d->getCompletado() == false)
 								aux2 = d->getValorT2();
 							else
 								aux2 = d->getValorD();
 							break;
-						case 'E': 
+						case 'E':
 							if (e->getCompletado() == false)
 								aux2 = e->getValorT2();
 							else
 								aux2 = e->getValorD();
 							break;
 						}
-						aux = A[i]->getPeso()+aux2;//se suma el peso del camino y el valor temporal o defnitivo del vertice 
+						aux = A[i]->getPeso() + aux2;//se suma el peso del camino y el valor temporal o defnitivo del vertice 
 						if (aux <= menor || contAux < 1) { menor = aux; a->setValorT(menor); a->setLetraProcedencia(A[i]->getLetra()); contAux++; }
-						
+
 					}
 
 				}
@@ -132,7 +132,7 @@ public:
 				contAux = menor = aux = aux2 = 0;
 				for (size_t i = 0; i < B.size(); i++)//para cada uno de los valores que llegan al vertice
 				{
-					
+
 					switch (B[i]->getLetra()) {
 					case 'A':infinit = a->getInfinito(); break;
 					case 'C':infinit = c->getInfinito(); break;
@@ -170,7 +170,7 @@ public:
 						}
 						aux = B[i]->getPeso() + aux2;//se suma el peso del camino y el valor temporal o defnitivo del vertice 
 						if (aux <= menor || contAux < 1) { menor = aux; b->setValorT(menor); b->setLetraProcedencia(B[i]->getLetra()); contAux++; }
-						
+
 					}
 				}
 
@@ -179,7 +179,7 @@ public:
 				contAux = menor = aux = aux2 = 0;
 				for (size_t i = 0; i < C.size(); i++)//para cada uno de los valores que llegan al vertice
 				{
-					
+
 					switch (C[i]->getLetra()) {
 					case 'A':infinit = a->getInfinito(); break;
 					case 'B':infinit = b->getInfinito(); break;
@@ -217,7 +217,7 @@ public:
 						}
 						aux = C[i]->getPeso() + aux2;//se suma el peso del camino y el valor temporal o defnitivo del vertice 
 						if (aux <= menor || contAux < 1) { menor = aux; c->setValorT(menor); c->setLetraProcedencia(C[i]->getLetra()); contAux++; }
-						
+
 					}
 				}
 
@@ -226,7 +226,7 @@ public:
 				contAux = menor = aux = aux2 = 0;
 				for (size_t i = 0; i < D.size(); i++)//para cada uno de los valores que llegan al vertice
 				{
-					
+
 					switch (D[i]->getLetra()) {
 					case 'B':infinit = b->getInfinito(); break;
 					case 'C':infinit = c->getInfinito(); break;
@@ -264,7 +264,7 @@ public:
 						}
 						aux = D[i]->getPeso() + aux2;//se suma el peso del camino y el valor temporal o defnitivo del vertice 
 						if (aux <= menor || contAux < 1) { menor = aux; d->setValorT(menor); d->setLetraProcedencia(D[i]->getLetra()); contAux++; }
-					
+
 					}
 				}
 
@@ -273,7 +273,7 @@ public:
 				contAux = menor = aux = aux2 = 0;
 				for (size_t i = 0; i < E.size(); i++)//para cada uno de los valores que llegan al vertice
 				{
-					
+
 					switch (E[i]->getLetra()) {
 					case 'B':infinit = b->getInfinito(); break;
 					case 'C':infinit = c->getInfinito(); break;
@@ -312,7 +312,7 @@ public:
 						}
 						aux = E[i]->getPeso() + aux2;//se suma el peso del camino y el valor temporal o defnitivo del vertice 
 						if (aux <= menor || contAux < 1) { menor = aux; e->setValorT(menor); e->setLetraProcedencia(E[i]->getLetra()); contAux++; }
-						
+
 					}
 				}
 
@@ -331,31 +331,31 @@ public:
 				e->setInfinito();
 
 			//buscar menor elemento de la iteracion para volverlo definitivo
-			if(a->getValorT()<=b->getValorT() && a->getValorT() <= c->getValorT() && a->getValorT() <= d->getValorT() && a->getValorT() <= e->getValorT() && a->getLetraProcedencia()!= ' ') {
+			if (a->getValorT() <= b->getValorT() && a->getValorT() <= c->getValorT() && a->getValorT() <= d->getValorT() && a->getValorT() <= e->getValorT() && a->getLetraProcedencia() != ' ') {
 				a->setValorD(a->getValorT());
 				a->setCompletado();
 			}
-			if(b->getValorT()<=a->getValorT() && b->getValorT() <= c->getValorT() && b->getValorT() <= d->getValorT() && b->getValorT() <= e->getValorT() && b->getLetraProcedencia() != ' '){
+			if (b->getValorT() <= a->getValorT() && b->getValorT() <= c->getValorT() && b->getValorT() <= d->getValorT() && b->getValorT() <= e->getValorT() && b->getLetraProcedencia() != ' ') {
 				b->setValorD(b->getValorT());
 				b->setCompletado();
 			}
-			if(c->getValorT()<=b->getValorT() && c->getValorT() <= a->getValorT() && c->getValorT() <= d->getValorT() && c->getValorT() <= e->getValorT() && c->getLetraProcedencia() != ' '){
+			if (c->getValorT() <= b->getValorT() && c->getValorT() <= a->getValorT() && c->getValorT() <= d->getValorT() && c->getValorT() <= e->getValorT() && c->getLetraProcedencia() != ' ') {
 				c->setValorD(c->getValorT());
 				c->setCompletado();
 
 			}
-			if(d->getValorT()<=b->getValorT() && d->getValorT() <= c->getValorT() && d->getValorT() <= a->getValorT() && d->getValorT() <= e->getValorT() && d->getLetraProcedencia() != ' '){
+			if (d->getValorT() <= b->getValorT() && d->getValorT() <= c->getValorT() && d->getValorT() <= a->getValorT() && d->getValorT() <= e->getValorT() && d->getLetraProcedencia() != ' ') {
 				d->setValorD(d->getValorT());
 				d->setCompletado();
 
 			}
-			if(e->getValorT()<=b->getValorT() && e->getValorT() <= c->getValorT() && e->getValorT() <= d->getValorT() && e->getValorT() <= a->getValorT() && e->getLetraProcedencia() != ' '){
+			if (e->getValorT() <= b->getValorT() && e->getValorT() <= c->getValorT() && e->getValorT() <= d->getValorT() && e->getValorT() <= a->getValorT() && e->getLetraProcedencia() != ' ') {
 				e->setValorD(e->getValorT());
 				e->setCompletado();
 
 			}
-				
-			
+
+
 			//PASAR VALORES DE T(ACTUAL) A T2(PASADOS) 
 			a->setValorT2(a->getValorT());
 			b->setValorT2(b->getValorT());
@@ -375,19 +375,19 @@ public:
 		case 'D':rspta = d->getValorT(); break;
 		case 'E':rspta = e->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(),Vinicial,Vfinal,nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//6
 	Vertices(int ab, int ac, int ad, int ae, int af,
-					 int bc, int bd, int be, int bf,
-							 int cd, int ce, int cf,
-									 int de, int df,
-											 int ef, int nele,char Vinicial,char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae),af(af),
-															   bc(bc), bd(bd), be(be),bf(bf),
-																	   cd(cd), ce(ce),cf(cf),
-																			   de(de),df(df),
-																					  ef(ef){
+		int bc, int bd, int be, int bf,
+		int cd, int ce, int cf,
+		int de, int df,
+		int ef, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af),
+		bc(bc), bd(bd), be(be), bf(bf),
+		cd(cd), ce(ce), cf(cf),
+		de(de), df(df),
+		ef(ef) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf) };
@@ -773,7 +773,7 @@ public:
 				b->setValorD(b->getValorT());
 				b->setCompletado();
 			}
-			if (c->getValorT() <= b->getValorT() && c->getValorT() <= a->getValorT() && c->getValorT() <= d->getValorT() && c->getValorT() <= e->getValorT() && c->getValorT() <= f->getValorT() &&  c->getLetraProcedencia() != ' ') {
+			if (c->getValorT() <= b->getValorT() && c->getValorT() <= a->getValorT() && c->getValorT() <= d->getValorT() && c->getValorT() <= e->getValorT() && c->getValorT() <= f->getValorT() && c->getLetraProcedencia() != ' ') {
 				c->setValorD(c->getValorT());
 				c->setCompletado();
 
@@ -816,21 +816,21 @@ public:
 		case 'E':rspta = e->getValorT(); break;
 		case 'F':rspta = f->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(),f->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//7
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag,
-					 int bc, int bd, int be, int bf, int bg,
-							 int cd, int ce, int cf, int cg,
-									 int de, int df, int dg,
-											 int ef, int eg,
-													 int fg, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af),ag(ag),
-																	   bc(bc), bd(bd), be(be), bf(bf),bg(bg),
-																			   cd(cd), ce(ce), cf(cf),cg(cg),
-																					   de(de), df(df),dg(dg),
-																							   ef(ef),eg(eg),
-																									  fg(fg){
+		int bc, int bd, int be, int bf, int bg,
+		int cd, int ce, int cf, int cg,
+		int de, int df, int dg,
+		int ef, int eg,
+		int fg, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg),
+		cd(cd), ce(ce), cf(cf), cg(cg),
+		de(de), df(df), dg(dg),
+		ef(ef), eg(eg),
+		fg(fg) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg) };
@@ -1374,23 +1374,23 @@ public:
 		case 'F':rspta = f->getValorT(); break;
 		case 'G':rspta = g->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(),g->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//8
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah,
-					 int bc, int bd, int be, int bf, int bg, int bh,
-							 int cd, int ce, int cf, int cg, int ch,
-									 int de, int df, int dg, int dh,
-											 int ef, int eg, int eh,
-													 int fg, int fh,
-															 int gh, int nele, char Vinicial, char Vfinal): ab(ab), ac(ac), ad(ad), ae(ae), af(af),ag(ag),ah(ah),
-																			  bc(bc), bd(bd), be(be), bf(bf),bg(bg),bh(bh),
-																					  cd(cd), ce(ce), cf(cf),cg(cg),ch(ch),
-																							  de(de), df(df),dg(dg),dh(dh),
-																									  ef(ef),eg(eg),eh(eh),
-																											 fg(fg),fh(fh),
-																													gh(gh) {
+		int bc, int bd, int be, int bf, int bg, int bh,
+		int cd, int ce, int cf, int cg, int ch,
+		int de, int df, int dg, int dh,
+		int ef, int eg, int eh,
+		int fg, int fh,
+		int gh, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag), ah(ah),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg), bh(bh),
+		cd(cd), ce(ce), cf(cf), cg(cg), ch(ch),
+		de(de), df(df), dg(dg), dh(dh),
+		ef(ef), eg(eg), eh(eh),
+		fg(fg), fh(fh),
+		gh(gh) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag), new Vertice('H',ah) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg), new Vertice('H',bh) };
@@ -2064,25 +2064,25 @@ public:
 		case 'G':rspta = g->getValorT(); break;
 		case 'H':rspta = h->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(),h->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//9
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai,
-					 int bc, int bd, int be, int bf, int bg, int bh, int bi,
-							 int cd, int ce, int cf, int cg, int ch, int ci,
-									 int de, int df, int dg, int dh, int di,
-											 int ef, int eg, int eh, int ei,
-													 int fg, int fh, int fi,
-															 int gh, int gi,
-																	 int hi, int nele, char Vinicial, char Vfinal): ab(ab), ac(ac), ad(ad), ae(ae), af(af),ag(ag),ah(ah),ai(ai),
-																					  bc(bc), bd(bd), be(be), bf(bf),bg(bg),bh(bh),bi(bi),
-																							  cd(cd), ce(ce), cf(cf),cg(cg),ch(ch),ci(ci),
-																									  de(de), df(df),dg(dg),dh(dh),di(di),
-																											  ef(ef),eg(eg),eh(eh),ei(ei),
-																													 fg(fg),fh(fh),fi(fi),
-																															gh(gh),gi(gi),
-																																   hi(hi) {
+		int bc, int bd, int be, int bf, int bg, int bh, int bi,
+		int cd, int ce, int cf, int cg, int ch, int ci,
+		int de, int df, int dg, int dh, int di,
+		int ef, int eg, int eh, int ei,
+		int fg, int fh, int fi,
+		int gh, int gi,
+		int hi, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag), ah(ah), ai(ai),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg), bh(bh), bi(bi),
+		cd(cd), ce(ce), cf(cf), cg(cg), ch(ch), ci(ci),
+		de(de), df(df), dg(dg), dh(dh), di(di),
+		ef(ef), eg(eg), eh(eh), ei(ei),
+		fg(fg), fh(fh), fi(fi),
+		gh(gh), gi(gi),
+		hi(hi) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag), new Vertice('H',ah), new Vertice('I',ai) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg), new Vertice('H',bh), new Vertice('I',bi) };
@@ -2139,7 +2139,7 @@ public:
 					case 'G':infinit = g->getInfinito(); break;
 					case 'H':infinit = h->getInfinito(); break;
 					case 'I':infinit = i->getInfinito(); break;
-					
+
 					}
 					if (A[ii]->getPeso() != 0 && infinit == false)//si el peso de esa relacion es diferente de 0(o sea que si hay camino xd) Y si el valor de la letra de la tabla a analizar no es infinito
 					{
@@ -2270,7 +2270,7 @@ public:
 								aux2 = i->getValorD();
 							break;
 						}
-						
+
 						aux = B[ii]->getPeso() + aux2;//se suma el peso del camino y el valor temporal o defnitivo del vertice 
 						if (aux <= menor || contAux < 1) { menor = aux; b->setValorT(menor); b->setLetraProcedencia(B[ii]->getLetra()); contAux++; }
 
@@ -2902,27 +2902,27 @@ public:
 		case 'H':rspta = h->getValorT(); break;
 		case 'I':rspta = i->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(),i->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//10
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj,
-					 int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj,
-							 int cd, int ce, int cf, int cg, int ch, int ci, int cj,
-									 int de, int df, int dg, int dh, int di, int dj,
-											 int ef, int eg, int eh, int ei, int ej,
-													 int fg, int fh, int fi, int fj,
-															 int gh, int gi, int gj,
-																	 int hi, int hj,
-																			 int ij, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae),af(af),ag(ag),ah(ah),ai(ai),aj(aj),
-																							  bc(bc), bd(bd), be(be), bf(bf),bg(bg),bh(bh),bi(bi),bj(bj),
-																									  cd(cd), ce(ce), cf(cf),cg(cg),ch(ch),ci(ci),cj(cj),
-																											  de(de), df(df),dg(dg),dh(dh),di(di),dj(dj),
-																													  ef(ef),eg(eg),eh(eh),ei(ei),ej(ej),
-																															 fg(fg),fh(fh),fi(fi),fj(fj),
-																																	gh(gh),gi(gi),gj(gj),
-																																		   hi(hi),hj(hj),
-																																				  ij(ij) {
+		int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj,
+		int cd, int ce, int cf, int cg, int ch, int ci, int cj,
+		int de, int df, int dg, int dh, int di, int dj,
+		int ef, int eg, int eh, int ei, int ej,
+		int fg, int fh, int fi, int fj,
+		int gh, int gi, int gj,
+		int hi, int hj,
+		int ij, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag), ah(ah), ai(ai), aj(aj),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg), bh(bh), bi(bi), bj(bj),
+		cd(cd), ce(ce), cf(cf), cg(cg), ch(ch), ci(ci), cj(cj),
+		de(de), df(df), dg(dg), dh(dh), di(di), dj(dj),
+		ef(ef), eg(eg), eh(eh), ei(ei), ej(ej),
+		fg(fg), fh(fh), fi(fi), fj(fj),
+		gh(gh), gi(gi), gj(gj),
+		hi(hi), hj(hj),
+		ij(ij) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag), new Vertice('H',ah), new Vertice('I',ai), new Vertice('J',aj) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg), new Vertice('H',bh), new Vertice('I',bi), new Vertice('J',bj) };
@@ -3900,29 +3900,29 @@ public:
 		case 'I':rspta = i->getValorT(); break;
 		case 'J':rspta = j->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(),j->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//11
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak,
-					 int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk,
-							 int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck,
-									 int de, int df, int dg, int dh, int di, int dj, int dk,
-											 int ef, int eg, int eh, int ei, int ej, int ek,
-													 int fg, int fh, int fi, int fj, int fk,
-															 int gh, int gi, int gj, int gk,
-																	 int hi, int hj, int hk,
-																			 int ij, int ik,
-																					 int jk, int nele, char Vinicial, char Vfinal): ab(ab), ac(ac), ad(ad), ae(ae),af(af),ag(ag),ah(ah),ai(ai), aj(aj),ak(ak),
-																									  bc(bc), bd(bd), be(be), bf(bf),bg(bg),bh(bh),bi(bi),bj(bj),bk(bk),
-																											  cd(cd), ce(ce), cf(cf),cg(cg),ch(ch),ci(ci),cj(cj),ck(ck),
-																													  de(de), df(df),dg(dg),dh(dh),di(di),dj(dj),dk(dk),
-																															  ef(ef),eg(eg),eh(eh),ei(ei),ej(ej),ek(ek),
-																																	 fg(fg),fh(fh),fi(fi),fj(fj),fk(fk),
-																																			gh(gh),gi(gi),gj(gj),gk(gk),
-																																				   hi(hi),hj(hj),hk(hk),
-																																						  ij(ij),ik(ik),
-																																								 jk(jk) {
+		int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk,
+		int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck,
+		int de, int df, int dg, int dh, int di, int dj, int dk,
+		int ef, int eg, int eh, int ei, int ej, int ek,
+		int fg, int fh, int fi, int fj, int fk,
+		int gh, int gi, int gj, int gk,
+		int hi, int hj, int hk,
+		int ij, int ik,
+		int jk, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag), ah(ah), ai(ai), aj(aj), ak(ak),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg), bh(bh), bi(bi), bj(bj), bk(bk),
+		cd(cd), ce(ce), cf(cf), cg(cg), ch(ch), ci(ci), cj(cj), ck(ck),
+		de(de), df(df), dg(dg), dh(dh), di(di), dj(dj), dk(dk),
+		ef(ef), eg(eg), eh(eh), ei(ei), ej(ej), ek(ek),
+		fg(fg), fh(fh), fi(fi), fj(fj), fk(fk),
+		gh(gh), gi(gi), gj(gj), gk(gk),
+		hi(hi), hj(hj), hk(hk),
+		ij(ij), ik(ik),
+		jk(jk) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag), new Vertice('H',ah), new Vertice('I',ai), new Vertice('J',aj), new Vertice('K',ak) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg), new Vertice('H',bh), new Vertice('I',bi), new Vertice('J',bj), new Vertice('K',bk) };
@@ -5063,31 +5063,31 @@ public:
 		case 'J':rspta = j->getValorT(); break;
 		case 'K':rspta = k->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(),k->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//12
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak, int al,
-					 int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk, int bl,
-							 int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck, int cl,
-									 int de, int df, int dg, int dh, int di, int dj, int dk, int dl,
-											 int ef, int eg, int eh, int ei, int ej, int ek, int el,
-													 int fg, int fh, int fi, int fj, int fk, int fl,
-															 int gh, int gi, int gj, int gk, int gl,
-																	 int hi, int hj, int hk, int hl,
-																			 int ij, int ik, int il,
-																					 int jk, int jl,
-																							 int kl, int nele, char Vinicial, char Vfinal): ab(ab), ac(ac), ad(ad), ae(ae),af(af),ag(ag),ah(ah),ai(ai), aj(aj),ak(ak),al(al),
-																											  bc(bc), bd(bd), be(be), bf(bf),bg(bg),bh(bh),bi(bi),bj(bj),bk(bk),bl(bl),
-																													  cd(cd), ce(ce), cf(cf),cg(cg),ch(ch),ci(ci),cj(cj),ck(ck),cl(cl),
-																															  de(de), df(df),dg(dg),dh(dh),di(di),dj(dj),dk(dk),dl(dl),
-																																	  ef(ef),eg(eg),eh(eh),ei(ei),ej(ej),ek(ek),el(el),
-																																			 fg(fg),fh(fh),fi(fi),fj(fj),fk(fk),fl(fl),
-																																					gh(gh),gi(gi),gj(gj),gk(gk),gl(gl),
-																																						   hi(hi),hj(hj),hk(hk),hl(hl),
-																																								  ij(ij),ik(ik),il(il),
-																																										 jk(jk),jl(jl),
-																																												kl(kl) {
+		int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk, int bl,
+		int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck, int cl,
+		int de, int df, int dg, int dh, int di, int dj, int dk, int dl,
+		int ef, int eg, int eh, int ei, int ej, int ek, int el,
+		int fg, int fh, int fi, int fj, int fk, int fl,
+		int gh, int gi, int gj, int gk, int gl,
+		int hi, int hj, int hk, int hl,
+		int ij, int ik, int il,
+		int jk, int jl,
+		int kl, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag), ah(ah), ai(ai), aj(aj), ak(ak), al(al),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg), bh(bh), bi(bi), bj(bj), bk(bk), bl(bl),
+		cd(cd), ce(ce), cf(cf), cg(cg), ch(ch), ci(ci), cj(cj), ck(ck), cl(cl),
+		de(de), df(df), dg(dg), dh(dh), di(di), dj(dj), dk(dk), dl(dl),
+		ef(ef), eg(eg), eh(eh), ei(ei), ej(ej), ek(ek), el(el),
+		fg(fg), fh(fh), fi(fi), fj(fj), fk(fk), fl(fl),
+		gh(gh), gi(gi), gj(gj), gk(gk), gl(gl),
+		hi(hi), hj(hj), hk(hk), hl(hl),
+		ij(ij), ik(ik), il(il),
+		jk(jk), jl(jl),
+		kl(kl) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag), new Vertice('H',ah), new Vertice('I',ai), new Vertice('J',aj), new Vertice('K',ak), new Vertice('L',al) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg), new Vertice('H',bh), new Vertice('I',bi), new Vertice('J',bj), new Vertice('K',bk), new Vertice('L',bl) };
@@ -6413,33 +6413,33 @@ public:
 		case 'K':rspta = k->getValorT(); break;
 		case 'L':rspta = l->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(),l->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//13
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak, int al, int am,
-					 int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk, int bl, int bm,
-							 int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck, int cl, int cm,
-									 int de, int df, int dg, int dh, int di, int dj, int dk, int dl, int dm,
-											 int ef, int eg, int eh, int ei, int ej, int ek, int el, int em,
-													 int fg, int fh, int fi, int fj, int fk, int fl, int fm,
-															 int gh, int gi, int gj, int gk, int gl, int gm,
-																	 int hi, int hj, int hk, int hl, int hm,
-																			 int ij, int ik, int il, int im,
-																					 int jk, int jl, int jm,
-																							 int kl, int km,
-																									 int lm, int nele, char Vinicial, char Vfinal): ab(ab), ac(ac), ad(ad), ae(ae),af(af),ag(ag),ah(ah),ai(ai), aj(aj),ak(ak),al(al),am(am),
-																													  bc(bc), bd(bd), be(be), bf(bf),bg(bg),bh(bh),bi(bi),bj(bj),bk(bk),bl(bl),bm(bm),
-																															  cd(cd), ce(ce), cf(cf),cg(cg),ch(ch),ci(ci),cj(cj),ck(ck),cl(cl),cm(cm),
-																																	  de(de), df(df),dg(dg),dh(dh),di(di),dj(dj),dk(dk),dl(dl),dm(dm),
-																																			  ef(ef),eg(eg),eh(eh),ei(ei),ej(ej),ek(ek),el(el),em(em),
-																																					 fg(fg),fh(fh),fi(fi),fj(fj),fk(fk),fl(fl),fm(fm),
-																																							gh(gh),gi(gi),gj(gj),gk(gk),gl(gl),gm(gm),
-																																								   hi(hi),hj(hj),hk(hk),hl(hl),hm(hm),
-																																										  ij(ij),ik(ik),il(il),im(im),
-																																												 jk(jk),jl(jl),jm(jm),
-																																														kl(kl),km(km),
-																																															   lm(lm) {
+		int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk, int bl, int bm,
+		int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck, int cl, int cm,
+		int de, int df, int dg, int dh, int di, int dj, int dk, int dl, int dm,
+		int ef, int eg, int eh, int ei, int ej, int ek, int el, int em,
+		int fg, int fh, int fi, int fj, int fk, int fl, int fm,
+		int gh, int gi, int gj, int gk, int gl, int gm,
+		int hi, int hj, int hk, int hl, int hm,
+		int ij, int ik, int il, int im,
+		int jk, int jl, int jm,
+		int kl, int km,
+		int lm, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag), ah(ah), ai(ai), aj(aj), ak(ak), al(al), am(am),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg), bh(bh), bi(bi), bj(bj), bk(bk), bl(bl), bm(bm),
+		cd(cd), ce(ce), cf(cf), cg(cg), ch(ch), ci(ci), cj(cj), ck(ck), cl(cl), cm(cm),
+		de(de), df(df), dg(dg), dh(dh), di(di), dj(dj), dk(dk), dl(dl), dm(dm),
+		ef(ef), eg(eg), eh(eh), ei(ei), ej(ej), ek(ek), el(el), em(em),
+		fg(fg), fh(fh), fi(fi), fj(fj), fk(fk), fl(fl), fm(fm),
+		gh(gh), gi(gi), gj(gj), gk(gk), gl(gl), gm(gm),
+		hi(hi), hj(hj), hk(hk), hl(hl), hm(hm),
+		ij(ij), ik(ik), il(il), im(im),
+		jk(jk), jl(jl), jm(jm),
+		kl(kl), km(km),
+		lm(lm) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag), new Vertice('H',ah), new Vertice('I',ai), new Vertice('J',aj), new Vertice('K',ak), new Vertice('L',al), new Vertice('M',am) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg), new Vertice('H',bh), new Vertice('I',bi), new Vertice('J',bj), new Vertice('K',bk), new Vertice('L',bl), new Vertice('M',bm) };
@@ -7964,35 +7964,35 @@ public:
 		case 'L':rspta = l->getValorT(); break;
 		case 'M':rspta = m->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(),m->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(), m->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//14
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak, int al, int am, int an,
-					 int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk, int bl, int bm, int bn,
-							 int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck, int cl, int cm, int cn,
-									 int de, int df, int dg, int dh, int di, int dj, int dk, int dl, int dm, int dn,
-											 int ef, int eg, int eh, int ei, int ej, int ek, int el, int em, int en,
-													 int fg, int fh, int fi, int fj, int fk, int fl, int fm, int fn,
-															 int gh, int gi, int gj, int gk, int gl, int gm, int gn,
-																	 int hi, int hj, int hk, int hl, int hm, int hn,
-																			 int ij, int ik, int il, int im, int in,
-																					 int jk, int jl, int jm, int jn,
-																							 int kl, int km, int kn,
-																									 int lm, int ln,
-																											 int mn, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae),af(af),ag(ag),ah(ah),ai(ai),aj(aj),ak(ak),al(al),am(am),an(an),
-																															  bc(bc), bd(bd), be(be), bf(bf),bg(bg),bh(bh),bi(bi),bj(bj),bk(bk),bl(bl),bm(bm),bn(bn),
-																																	  cd(cd), ce(ce), cf(cf),cg(cg),ch(ch),ci(ci),cj(cj),ck(ck),cl(cl),cm(cm),cn(cn),
-																																			  de(de), df(df),dg(dg),dh(dh),di(di),dj(dj),dk(dk),dl(dl),dm(dm),dn(dn),
-																																					  ef(ef),eg(eg),eh(eh),ei(ei),ej(ej),ek(ek),el(el),em(em),en(en),
-																																							 fg(fg),fh(fh),fi(fi),fj(fj),fk(fk),fl(fl),fm(fm),fn(fn),
-																																									gh(gh),gi(gi),gj(gj),gk(gk),gl(gl),gm(gm),gn(gn),
-																																										   hi(hi),hj(hj),hk(hk),hl(hl),hm(hm),hn(hn),
-																																												  ij(ij),ik(ik),il(il),im(im),in(in),
-																																														 jk(jk),jl(jl),jm(jm),jn(jn),
-																																																kl(kl),km(km),kn(kn),
-																																																	   lm(lm),ln(ln),
-																																																			  mn(mn) {
+		int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk, int bl, int bm, int bn,
+		int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck, int cl, int cm, int cn,
+		int de, int df, int dg, int dh, int di, int dj, int dk, int dl, int dm, int dn,
+		int ef, int eg, int eh, int ei, int ej, int ek, int el, int em, int en,
+		int fg, int fh, int fi, int fj, int fk, int fl, int fm, int fn,
+		int gh, int gi, int gj, int gk, int gl, int gm, int gn,
+		int hi, int hj, int hk, int hl, int hm, int hn,
+		int ij, int ik, int il, int im, int in,
+		int jk, int jl, int jm, int jn,
+		int kl, int km, int kn,
+		int lm, int ln,
+		int mn, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag), ah(ah), ai(ai), aj(aj), ak(ak), al(al), am(am), an(an),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg), bh(bh), bi(bi), bj(bj), bk(bk), bl(bl), bm(bm), bn(bn),
+		cd(cd), ce(ce), cf(cf), cg(cg), ch(ch), ci(ci), cj(cj), ck(ck), cl(cl), cm(cm), cn(cn),
+		de(de), df(df), dg(dg), dh(dh), di(di), dj(dj), dk(dk), dl(dl), dm(dm), dn(dn),
+		ef(ef), eg(eg), eh(eh), ei(ei), ej(ej), ek(ek), el(el), em(em), en(en),
+		fg(fg), fh(fh), fi(fi), fj(fj), fk(fk), fl(fl), fm(fm), fn(fn),
+		gh(gh), gi(gi), gj(gj), gk(gk), gl(gl), gm(gm), gn(gn),
+		hi(hi), hj(hj), hk(hk), hl(hl), hm(hm), hn(hn),
+		ij(ij), ik(ik), il(il), im(im), in(in),
+		jk(jk), jl(jl), jm(jm), jn(jn),
+		kl(kl), km(km), kn(kn),
+		lm(lm), ln(ln),
+		mn(mn) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag), new Vertice('H',ah), new Vertice('I',ai), new Vertice('J',aj), new Vertice('K',ak), new Vertice('L',al), new Vertice('M',am), new Vertice('N',an) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg), new Vertice('H',bh), new Vertice('I',bi), new Vertice('J',bj), new Vertice('K',bk), new Vertice('L',bl), new Vertice('M',bm), new Vertice('N',bn) };
@@ -9730,37 +9730,37 @@ public:
 		case 'M':rspta = m->getValorT(); break;
 		case 'N':rspta = n->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(), m->getLetraProcedencia(),n->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(), m->getLetraProcedencia(), n->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
 	//15
 	Vertices(int ab, int ac, int ad, int ae, int af, int ag, int ah, int ai, int aj, int ak, int al, int am, int an, int ao,
-					 int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk, int bl, int bm, int bn, int bo,
-							 int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck, int cl, int cm, int cn, int co,
-									 int de, int df, int dg, int dh, int di, int dj, int dk, int dl, int dm, int dn, int doo,
-											 int ef, int eg, int eh, int ei, int ej, int ek, int el, int em, int en, int eo,
-													 int fg, int fh, int fi, int fj, int fk, int fl, int fm, int fn, int fo,
-															 int gh, int gi, int gj, int gk, int gl, int gm, int gn, int go,
-																	 int hi, int hj, int hk, int hl, int hm, int hn, int ho,
-																			 int ij, int ik, int il, int im, int in, int io,
-																					 int jk, int jl, int jm, int jn, int jo,
-																							 int kl, int km, int kn, int ko,
-																									 int lm, int ln, int lo,
-																											 int mn, int mo,
-																													 int no,int nele, char Vinicial, char Vfinal): ab(ab), ac(ac), ad(ad), ae(ae), af(af),ag(ag),ah(ah),ai(ai),aj(aj),ak(ak),al(al),am(am),an(an),ao(ao),
-																																	  bc(bc), bd(bd), be(be), bf(bf),bg(bg),bh(bh),bi(bi),bj(bj),bk(bk),bl(bl),bm(bm),bn(bn),bo(bo),
-																																			  cd(cd), ce(ce), cf(cf),cg(cg),ch(ch),ci(ci),cj(cj),ck(ck),cl(cl),cm(cm),cn(cn),co(co),
-																																					  de(de), df(df),dg(dg),dh(dh),di(di),dj(dj),dk(dk),dl(dl),dm(dm),dn(dn),doo(doo),
-																																							  ef(ef),eg(eg),eh(eh),ei(ei),ej(ej),ek(ek),el(el),em(em),en(en),eo(eo),
-																																									 fg(fg),fh(fh),fi(fi),fj(fj),fk(fk),fl(fl),fm(fm),fn(fn),fo(fo),
-																																											gh(gh),gi(gi),gj(gj),gk(gk),gl(gl),gm(gm),gn(gn),go(go),
-																																												   hi(hi),hj(hj),hk(hk),hl(hl),hm(hm),hn(hn),ho(ho),
-																																														  ij(ij),ik(ik),il(il),im(im),in(in),io(io),
-																																																 jk(jk),jl(jl),jm(jm),jn(jn),jo(jo),
-																																																		kl(kl),km(km),kn(kn),ko(ko),
-																																																			   lm(lm),ln(ln),lo(lo),
-																																																					  mn(mn),mo(mo),
-																																																							 no(no) {
+		int bc, int bd, int be, int bf, int bg, int bh, int bi, int bj, int bk, int bl, int bm, int bn, int bo,
+		int cd, int ce, int cf, int cg, int ch, int ci, int cj, int ck, int cl, int cm, int cn, int co,
+		int de, int df, int dg, int dh, int di, int dj, int dk, int dl, int dm, int dn, int doo,
+		int ef, int eg, int eh, int ei, int ej, int ek, int el, int em, int en, int eo,
+		int fg, int fh, int fi, int fj, int fk, int fl, int fm, int fn, int fo,
+		int gh, int gi, int gj, int gk, int gl, int gm, int gn, int go,
+		int hi, int hj, int hk, int hl, int hm, int hn, int ho,
+		int ij, int ik, int il, int im, int in, int io,
+		int jk, int jl, int jm, int jn, int jo,
+		int kl, int km, int kn, int ko,
+		int lm, int ln, int lo,
+		int mn, int mo,
+		int no, int nele, char Vinicial, char Vfinal) : ab(ab), ac(ac), ad(ad), ae(ae), af(af), ag(ag), ah(ah), ai(ai), aj(aj), ak(ak), al(al), am(am), an(an), ao(ao),
+		bc(bc), bd(bd), be(be), bf(bf), bg(bg), bh(bh), bi(bi), bj(bj), bk(bk), bl(bl), bm(bm), bn(bn), bo(bo),
+		cd(cd), ce(ce), cf(cf), cg(cg), ch(ch), ci(ci), cj(cj), ck(ck), cl(cl), cm(cm), cn(cn), co(co),
+		de(de), df(df), dg(dg), dh(dh), di(di), dj(dj), dk(dk), dl(dl), dm(dm), dn(dn), doo(doo),
+		ef(ef), eg(eg), eh(eh), ei(ei), ej(ej), ek(ek), el(el), em(em), en(en), eo(eo),
+		fg(fg), fh(fh), fi(fi), fj(fj), fk(fk), fl(fl), fm(fm), fn(fn), fo(fo),
+		gh(gh), gi(gi), gj(gj), gk(gk), gl(gl), gm(gm), gn(gn), go(go),
+		hi(hi), hj(hj), hk(hk), hl(hl), hm(hm), hn(hn), ho(ho),
+		ij(ij), ik(ik), il(il), im(im), in(in), io(io),
+		jk(jk), jl(jl), jm(jm), jn(jn), jo(jo),
+		kl(kl), km(km), kn(kn), ko(ko),
+		lm(lm), ln(ln), lo(lo),
+		mn(mn), mo(mo),
+		no(no) {
 		//Asginar pesos y Letra de entrada a cada Vertice
 		A = { new Vertice('B',ab),new Vertice('C',ac),new Vertice('D',ad),new Vertice('E',ae), new Vertice('F',af), new Vertice('G',ag), new Vertice('H',ah), new Vertice('I',ai), new Vertice('J',aj), new Vertice('K',ak), new Vertice('L',al), new Vertice('M',am), new Vertice('N',an), new Vertice('O',ao) };
 		B = { new Vertice('A',ab),new Vertice('C',bc),new Vertice('D',bd),new Vertice('E',be), new Vertice('F',bf), new Vertice('G',bg), new Vertice('H',bh), new Vertice('I',bi), new Vertice('J',bj), new Vertice('K',bk), new Vertice('L',bl), new Vertice('M',bm), new Vertice('N',bn), new Vertice('O',bo) };
@@ -11492,7 +11492,7 @@ public:
 					case 'L':infinit = l->getInfinito(); break;
 					case 'M':infinit = m->getInfinito(); break;
 					case 'N':infinit = n->getInfinito(); break;
-					
+
 					}
 
 					if (O[ii]->getPeso() != 0 && infinit == false)//si el peso de esa relacion es diferente de 0(o sea que si hay camino xd) Y si el valor de la letra de la tabla a analizar no es infinito
@@ -11591,7 +11591,7 @@ public:
 				}
 
 			}
-			
+
 
 			//INFINITO
 			if (a->getLetraProcedencia() != ' ')
@@ -11727,10 +11727,10 @@ public:
 		case 'N':rspta = n->getValorT(); break;
 		case 'O':rspta = o->getValorT(); break;
 		}
-		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(), m->getLetraProcedencia(), n->getLetraProcedencia(),o->getLetraProcedencia(), Vinicial, Vfinal, nele);
+		Camino* CaminoMinimo = new Camino(a->getLetraProcedencia(), b->getLetraProcedencia(), c->getLetraProcedencia(), d->getLetraProcedencia(), e->getLetraProcedencia(), f->getLetraProcedencia(), g->getLetraProcedencia(), h->getLetraProcedencia(), i->getLetraProcedencia(), j->getLetraProcedencia(), k->getLetraProcedencia(), l->getLetraProcedencia(), m->getLetraProcedencia(), n->getLetraProcedencia(), o->getLetraProcedencia(), Vinicial, Vfinal, nele);
 		caminoMin = CaminoMinimo->getRspta();
 	};
-	
+
 	//Destructor
 	~Vertices() {};
 
@@ -11748,7 +11748,7 @@ public:
 	vector<Vertice*> getM() { return M; }
 	vector<Vertice*> getN() { return N; }
 	vector<Vertice*> getO() { return O; }
-	
+
 	string getRspta() { return to_string(rspta); }
 	string getCamino() { return caminoMin; }
 
